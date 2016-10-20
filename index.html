@@ -5,10 +5,18 @@
     <title>Hangman</title>
   </head>
   <body>
-    <div class="">
-      <input type="text" id="guess" value="">
-      <input type="submit" name="clickMe" onclick="getGuess()">
+    <div id="display">
+
     </div>
+    <div id="guessDisplay">
+
+    </div>
+    <form id="frm1" action="script.js">
+  Guess your letter: <input type="text" name="fname"        value=""><br>
+    </form>
+
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
 
     <script type="text/javascript" src="scripts/script.js"></script>
     <script type="text/javascript" src="scripts/common-words.js">
