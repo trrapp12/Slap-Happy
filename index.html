@@ -8,14 +8,24 @@
     <div id="display">
 
     </div>
+    <div class="">
+      <p>
+        You word has this many characters:
+      </p>
+    </div>
     <div id="guessDisplay">
 
     </div>
+    <br>
+    <br>
+    <p>
+      Enter your guess in the box below:
+    </p>
     <form id="frm1" action="script.js">
   Guess your letter: <input type="text" name="fname"        value=""><br>
     </form>
 
-    <button onclick="myFunction()">Try it</button>
+    <button onclick="myFunction(); compareGuess()">Try it</button>
     <p id="demo"></p>
 
     <script type="text/javascript" src="scripts/script.js"></script>
