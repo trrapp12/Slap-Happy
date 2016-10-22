@@ -1,14 +1,12 @@
 let word = "cheese"
 let guessDisplayArr = []
-let tries = 8
+let answerArr = word.split("");
+let tries = 8;
 
 
 function countCharacters (word) {
-  let splitWordArr = word.split("");
-  console.log(splitWordArr);
-  // let guessDisplayArr = [];
 
-    for (let i = 0; i < splitWordArr.length; i++ ) {
+    for (let i = 0; i < answerArr.length; i++ ) {
       guessDisplayArr.push(" _ ");
       console.log(guessDisplayArr);
     }
@@ -17,52 +15,45 @@ function countCharacters (word) {
 
 //TODO: integrate this function into on-click//
 function compareGuess () {
-  let answer = word.split("");
-  console.log(answer);
 
-  let guess = document.getElementById("frm1").value;
+  let guess = test();
   console.log(guess);
 
-  let guessDisplayArr = []
-  console.log(guessDisplayArr);
+  function exchangeValues () {
+    i = answerArr.indexOf(guess);
 
-  for (let i = 0; i < answer.length; i++ ) {
-
-      if (answer[i] === guess) {
-      guessDisplayArr[i] = guess }
-
-      else {
-        guessDisplayArr.push("")
-        console.log(guessDisplayArr);
-      }
+    while (i >= 0) {
+      guessDisplayArr[i] = guess;
+      console.log(guess);
+      console.log(guessDisplayArr);
+      i = answerArr.indexOf(guess, i+1);
     };
-    guessDisplayArr.push(" _ ");
-    console.log(guessDisplayArr);
+   };
+   exchangeValues();
   };
 
+
+
 function myFunction() {
-    let guessLetterButton = document.getElementById("frm1");
+    let guessLetterButton =  test();
     let guessDisplayButton = [];
     let text = "";
 
     for (i = 0; i < guessLetterButton.length ;i++) {
-        guessDisplayButton.push(guessLetterButton.elements[i].value) ;
-        // console.log(guessDisplayButton);
+        guessDisplayButton.push(guessLetterButton);
+        console.log(guessDisplayButton);
         document.getElementById("demo").innerHTML = guessDisplayButton;
     };
-    // compareGuess(word)
+    compareGuess();
 };
+
+
+//this gets the value of the button//
+function test () {return document.getElementById("input1").value}
 
 //notice that text is not a variable, it is connected to displayWord so it takes what we pass into that parameter//
 function displayWord (text) {
   document.getElementById("display").innerHTML= text;
-};
-
-function counter () {
-};
-
-function endOfGame () {
-
 };
 
 window.onload = function () {
@@ -71,5 +62,4 @@ window.onload = function () {
   displayWord(word);
 };
 
-compareGuess (word)
 //
