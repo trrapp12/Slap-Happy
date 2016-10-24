@@ -1,25 +1,31 @@
-// function variableObjectFunc (word, guessDisplayArr, answerArr, tries) {
-//   this.word = word;
-//   this.guessDisplayArr = guessDisplayArr;
-//   this.answerArr = answerArr;
-//   this.tries = tries;
-// };
 
+function split () {
+  return this.word.split("");
+}
 
+var initialObject = {
+  word: 'cheese',
+  guessDisplayArr: [],
+  answerArr: split,
+  tries: 0,
+};
 
-let word = "cheese"
-let guessDisplayArr = []
-let answerArr = word.split("");
-let tries = 0
+  console.log(initialObject.word);
+  console.log(initialObject.answerArr());
+
+// let word = "cheese"
+// let guessDisplayArr = []
+// let answerArr = word.split("");
+// let tries = 0
 
 
 function countCharacters () {
 
-    for (let i = 0; i < answerArr.length; i++ ) {
-      guessDisplayArr.push(" _ ");
-      console.log(guessDisplayArr);
+    for (let i = 0; i < initialObject.answerArr().length; i++ ) {
+      initialObject.guessDisplayArr.push(" _ ");
+      console.log(initialObject.guessDisplayArr);
     };
-    document.getElementById("guessDisplay").innerHTML = guessDisplayArr;
+    document.getElementById("guessDisplay").innerHTML = initialObject.guessDisplayArr;
 };
 
 
@@ -29,15 +35,15 @@ function compareGuess () {
   console.log(guess);
 
   function exchangeValues () {
-    i = answerArr.indexOf(guess);
+    i = initialObject.answerArr().indexOf(guess);
 
     while (i >= 0) {
-      guessDisplayArr[i] = guess;
+      initialObject.guessDisplayArr[i] = guess;
       console.log(guess);
-      console.log(guessDisplayArr);
-      i = answerArr.indexOf(guess, i+1);
+      console.log(initialObject.guessDisplayArr);
+      i = initialObject.answerArr().indexOf(guess, i+1);
    };
-   document.getElementById("guessDisplay").innerHTML = guessDisplayArr;
+   document.getElementById("guessDisplay").innerHTML = initialObject.guessDisplayArr;
  };
    exchangeValues();
 
@@ -79,9 +85,8 @@ function depricateTries (tries) {
 };
 
 window.onload = function () {
-  let word = "cheese"
-  countCharacters (word);
-  displayWord(word);
+  countCharacters (initialObject.word);
+  displayWord(initialObject.word);
 };
 
 //
