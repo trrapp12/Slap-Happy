@@ -1,10 +1,10 @@
 let word = "cheese"
 let guessDisplayArr = []
 let answerArr = word.split("");
-let tries = 8;
+let tries = 0
 
 
-function countCharacters (word) {
+function countCharacters () {
 
     for (let i = 0; i < answerArr.length; i++ ) {
       guessDisplayArr.push(" _ ");
@@ -27,11 +27,14 @@ function compareGuess () {
       console.log(guess);
       console.log(guessDisplayArr);
       i = answerArr.indexOf(guess, i+1);
-    };
    };
-   exchangeValues();
-  };
 
+ };
+   exchangeValues();
+
+   depricateTries(tries);
+   console.log(tries);
+};
 
 
 function myFunction() {
@@ -45,6 +48,7 @@ function myFunction() {
         document.getElementById("demo").innerHTML = guessDisplayButton;
     };
     compareGuess();
+    return false;
 };
 
 
@@ -54,6 +58,15 @@ function test () {return document.getElementById("input1").value}
 //notice that text is not a variable, it is connected to displayWord so it takes what we pass into that parameter//
 function displayWord (text) {
   document.getElementById("display").innerHTML= text;
+};
+
+function depricateTries () {
+  while (tries < 8) {
+    tries += 1;
+    break
+  };
+  return tries;
+  console.log(tries);
 };
 
 window.onload = function () {
