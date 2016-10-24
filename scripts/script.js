@@ -28,7 +28,7 @@ function compareGuess () {
       console.log(guessDisplayArr);
       i = answerArr.indexOf(guess, i+1);
    };
-
+   document.getElementById("guessDisplay").innerHTML = guessDisplayArr;
  };
    exchangeValues();
 
