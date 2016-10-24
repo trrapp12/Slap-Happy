@@ -1,3 +1,12 @@
+// function variableObjectFunc (word, guessDisplayArr, answerArr, tries) {
+//   this.word = word;
+//   this.guessDisplayArr = guessDisplayArr;
+//   this.answerArr = answerArr;
+//   this.tries = tries;
+// };
+
+
+
 let word = "cheese"
 let guessDisplayArr = []
 let answerArr = word.split("");
@@ -9,11 +18,11 @@ function countCharacters () {
     for (let i = 0; i < answerArr.length; i++ ) {
       guessDisplayArr.push(" _ ");
       console.log(guessDisplayArr);
-    }
+    };
     document.getElementById("guessDisplay").innerHTML = guessDisplayArr;
 };
 
-//TODO: integrate this function into on-click//
+
 function compareGuess () {
 
   let guess = test();
@@ -53,14 +62,14 @@ function myFunction() {
 
 
 //this gets the value of the button//
-function test () {return document.getElementById("input1").value}
+function test () {return document.getElementById("input1").value};
 
 //notice that text is not a variable, it is connected to displayWord so it takes what we pass into that parameter//
 function displayWord (text) {
   document.getElementById("display").innerHTML= text;
 };
 
-function depricateTries () {
+function depricateTries (tries) {
   while (tries < 8) {
     tries += 1;
     break
