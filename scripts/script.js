@@ -21,6 +21,18 @@ function displayWord (text) {
 };
 
 
+function win () {
+  initialObject.word = "cheese";
+  initialObject.answerArr = initialObject.word.split("")
+
+  for (var i = 0; i < initialObject.answerArr.length; ++i) {
+     if (initialObject.answerArr[i] !== initialObject.guessDisplayArr[i]) return true;
+   }
+   document.getElementById("deathmessage").innerHTML= "You have won the game";
+   return false;
+};
+
+
 function countCharacters () {
     initialObject.word = "cheese";
 
@@ -46,6 +58,7 @@ function exchangeValues (guess) {
     console.log(guess);
     console.log(initialObject.guessDisplayArr);
     i = initialObject.answerArr.indexOf(guess, i+1);
+
  };
 
  document.getElementById("guessDisplay").innerHTML = initialObject.guessDisplayArr;
@@ -74,8 +87,11 @@ function myFunction() {
         console.log(initialObject.guessDisplayButton);
 
         document.getElementById("demo").innerHTML = initialObject.guessDisplayButton;
+
     };
     compareGuess();
+
+    win();
 };
 
 
