@@ -1,31 +1,54 @@
 
-function split () {
-  return this.word.split("");
-}
 
 var initialObject = {
-  word: 'cheese',
-  guessDisplayArr: [],
-  answerArr: split,
+  maxtries: 8,
   tries: 0,
+  guessDisplayButton: [],
+
 };
 
-  console.log(initialObject.word);
-  console.log(initialObject.answerArr());
 
-// let word = "cheese"
-// let guessDisplayArr = []
-// let answerArr = word.split("");
-// let tries = 0
+function test () {return document.getElementById("input1").value};
+
+
+function split () {
+  return this.word.split("")
+};
+
+
+function displayWord (text) {
+  document.getElementById("display").innerHTML= text;
+};
 
 
 function countCharacters () {
+    initialObject.word = "cheese";
 
-    for (let i = 0; i < initialObject.answerArr().length; i++ ) {
+    initialObject.guessDisplayArr = [];
+
+    initialObject.answerArr = initialObject.word.split("")
+    console.log(initialObject.answerArr);
+
+
+    for (let i = 0; i < initialObject.answerArr.length; i++ ) {
       initialObject.guessDisplayArr.push(" _ ");
       console.log(initialObject.guessDisplayArr);
     };
     document.getElementById("guessDisplay").innerHTML = initialObject.guessDisplayArr;
+};
+
+
+function exchangeValues (guess) {
+  i = initialObject.answerArr.indexOf(guess);
+
+  while (i >= 0) {
+    initialObject.guessDisplayArr[i] = guess;
+    console.log(guess);
+    console.log(initialObject.guessDisplayArr);
+    i = initialObject.answerArr.indexOf(guess, i+1);
+ };
+
+ document.getElementById("guessDisplay").innerHTML = initialObject.guessDisplayArr;
 };
 
 
@@ -34,59 +57,39 @@ function compareGuess () {
   let guess = test();
   console.log(guess);
 
-  function exchangeValues () {
-    i = initialObject.answerArr().indexOf(guess);
+   exchangeValues(guess);
 
-    while (i >= 0) {
-      initialObject.guessDisplayArr[i] = guess;
-      console.log(guess);
-      console.log(initialObject.guessDisplayArr);
-      i = initialObject.answerArr().indexOf(guess, i+1);
-   };
-   document.getElementById("guessDisplay").innerHTML = initialObject.guessDisplayArr;
- };
-   exchangeValues();
+   depricateTries();
 
-   depricateTries(tries);
-   console.log(tries);
 };
 
 
 function myFunction() {
     let guessLetterButton =  test();
-    let guessDisplayButton = [];
+    // let guessDisplayButton = [];
     let text = "";
 
     for (i = 0; i < guessLetterButton.length ;i++) {
-        guessDisplayButton.push(guessLetterButton);
-        console.log(guessDisplayButton);
-        document.getElementById("demo").innerHTML = guessDisplayButton;
+        initialObject.guessDisplayButton.push(guessLetterButton);
+        console.log(initialObject.guessDisplayButton);
+
+        document.getElementById("demo").innerHTML = initialObject.guessDisplayButton;
     };
     compareGuess();
-    return false;
 };
 
 
-//this gets the value of the button//
-function test () {return document.getElementById("input1").value};
+function depricateTries () {
 
-//notice that text is not a variable, it is connected to displayWord so it takes what we pass into that parameter//
-function displayWord (text) {
-  document.getElementById("display").innerHTML= text;
-};
+  if (initialObject.tries < initialObject.maxtries) {
+    initialObject.tries += 1;
+    console.log(initialObject.tries);
+  }
 
-function depricateTries (tries) {
-  while (tries < 8) {
-    tries += 1;
-    break
-  };
-  return tries;
-  console.log(tries);
+  else { document.getElementById("deathmessage").innerHTML= "Your number of tries has expired" };
 };
 
 window.onload = function () {
-  countCharacters (initialObject.word);
-  displayWord(initialObject.word);
+  countCharacters ();
+  displayWord();
 };
-
-//
