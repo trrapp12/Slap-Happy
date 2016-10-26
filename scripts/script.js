@@ -1,12 +1,16 @@
-
+Array.prototype.randomElement = function () {
+    return this[Math.floor(Math.random() * this.length)]
+};
 
 var initialObject = {
   maxtries: 8,
   tries: 0,
   guessDisplayButton: [],
+  word: arrWords.randomElement()
 
 };
 
+console.log(initialObject.word);
 
 function test () {return document.getElementById("input1").value};
 
@@ -22,7 +26,6 @@ function displayWord (text) {
 
 
 function win () {
-  initialObject.word = "cheese";
   initialObject.answerArr = initialObject.word.split("")
 
   for (var i = 0; i < initialObject.answerArr.length; ++i) {
@@ -34,8 +37,6 @@ function win () {
 
 
 function countCharacters () {
-    initialObject.word = "cheese";
-
     initialObject.guessDisplayArr = [];
 
     initialObject.answerArr = initialObject.word.split("")
@@ -107,6 +108,7 @@ function depricateTries () {
 };
 
 window.onload = function () {
+
   countCharacters ();
   displayWord();
 };
