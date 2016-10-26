@@ -102,7 +102,8 @@ function depricateTries () {
     console.log(initialObject.tries);
   }
 
-  else { document.getElementById("deathmessage").innerHTML= "Your number of tries has expired" };
+  else { document.getElementById('audio').play();
+  document.getElementById("deathmessage").innerHTML= "Your number of tries has expired" };
 };
 
 window.onload = function () {
