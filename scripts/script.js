@@ -98,12 +98,14 @@ function myFunction() {
 
 function depricateTries () {
 
+  var audio = new Audio('media/233579__roivasugo__boo-you-suck.wav');
+
   if (initialObject.tries < initialObject.maxtries) {
     initialObject.tries += 1;
     console.log(initialObject.tries);
   }
 
-  else { document.getElementById('audio').play();
+  else { audio.play();
   document.getElementById("deathmessage").innerHTML= "Your number of tries has expired" };
 };
 
