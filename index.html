@@ -4,39 +4,42 @@
     <meta charset="utf-8">
     <title>Hangman</title>
     <link rel="stylesheet" href="css/master.css" media="screen" title="no title">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
   </head>
   <body>
-      <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
-    <source src="media/346041025.mp4" type="video/mp4">
-    </video>
-    <div class="relative">
-      <p class="relative">
-        You word has this many characters:
-      </p>
+    <div class="gamecontainer">
+      <div class="headline">
+        <p class="headlinetext">HANGMAN</p>
+      </div>
+        <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+      <source src="media/346041025.mp4" type="video/mp4">
+      </video>
+      <div class="relative">
+        <p class="font">
+          You word has <br>this many characters:
+        </p>
+      </div>
+      <div id="guessDisplay" class="relative font">
+      </div>
+      <div id="guessDisplayII" class="relative font" >
+      </div>
+      <br>
+      <br>
+      <div id="frm1" class="relative font">
+          <input class="relative inputfont" id="input1" type="text" name="fname" value="" maxlength="1" placeholder="Guess your letter here" style="font-size: .8em;"><br>
+            <button class="relative btn" onclick="myFunction()"><p class="buttonfont">Try it</p></button>
+      </div>
+    <div id="tried" class="relative font">
     </div>
-    <div id="guessDisplay" class="relative">
-
-    </div>
-    <div id="guessDisplayII" class="relative">
-
-    </div>
-    <br>
-    <br>
-    <p class="relative">
-      Enter your guess in the box below:
-    </p>
-    <div id="frm1" class="relative">
-  Guess your letter: <input class="relative" id="input1" type="text" name="fname" value="" maxlength="1"><br>
-  <button class="relative" onclick="myFunction()">Try it</button>
-</div>
-    <div id="tried" class="relative">
-    </div>
-    <p id="demo" class="relative"></p>
-    <div id="deathmessage" class="relative">
+    <p id="demo" class="relative buttonfont"></p>
+    <div id="deathmessage" class="relative font">
       <audio class="relative" id="audio" src="../media/233579__roivasugo__boo-you-suck.wav" autoplay></audio>
     </div>
-    <button class="relative" id="vidpause">Pause</button>
-    <script src="scripts/words.js"></script>
+    <button class="relative btn" id="vidpause"><p class="buttonfont">Pause
+    </p></button>
+
+    </div>
+        <script src="scripts/words.js"></script>
     <script type="text/javascript" src="scripts/script.js"></script>
     <script type="text/javascript" src="scripts/common-words.js"></script>
     <script type="text/javascript" src="scripts/video.js">
