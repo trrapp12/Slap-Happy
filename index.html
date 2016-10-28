@@ -5,6 +5,11 @@
     <title>Hangman</title>
   </head>
   <body>
+    <div class="video">
+      <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+    <source src="media/346041025.mp4" type="video/mp4">
+    </video>
+    </div>
     <div id="display">
 
     </div>
@@ -34,8 +39,11 @@
     <div id="deathmessage">
       <audio id="audio" src="../media/233579__roivasugo__boo-you-suck.wav" autoplay></audio>
     </div>
+    <button id="vidpause">Pause</button>
     <script src="scripts/words.js"></script>
     <script type="text/javascript" src="scripts/script.js"></script>
     <script type="text/javascript" src="scripts/common-words.js"></script>
+    <script type="text/javascript" src="scripts/video.js">
+    </script>
   </body>
 </html>
