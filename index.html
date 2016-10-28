@@ -3,43 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title>Hangman</title>
+    <link rel="stylesheet" href="css/master.css" media="screen" title="no title">
   </head>
   <body>
-    <div class="video">
       <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
     <source src="media/346041025.mp4" type="video/mp4">
     </video>
-    </div>
-    <div id="display">
-
-    </div>
-    <div class="">
-      <p>
+    <div class="relative">
+      <p class="relative">
         You word has this many characters:
       </p>
     </div>
-    <div id="guessDisplay">
+    <div id="guessDisplay" class="relative">
 
     </div>
-    <div id="guessDisplayII">
+    <div id="guessDisplayII" class="relative">
 
     </div>
     <br>
     <br>
-    <p>
+    <p class="relative">
       Enter your guess in the box below:
     </p>
-    <div id="frm1">
-  Guess your letter: <input id="input1" type="text" name="fname" value="" maxlength="1"><br>
-  <button onclick="myFunction()">Try it</button>
+    <div id="frm1" class="relative">
+  Guess your letter: <input class="relative" id="input1" type="text" name="fname" value="" maxlength="1"><br>
+  <button class="relative" onclick="myFunction()">Try it</button>
 </div>
-    <div id="tried">
+    <div id="tried" class="relative">
     </div>
-    <p id="demo"></p>
-    <div id="deathmessage">
-      <audio id="audio" src="../media/233579__roivasugo__boo-you-suck.wav" autoplay></audio>
+    <p id="demo" class="relative"></p>
+    <div id="deathmessage" class="relative">
+      <audio class="relative" id="audio" src="../media/233579__roivasugo__boo-you-suck.wav" autoplay></audio>
     </div>
-    <button id="vidpause">Pause</button>
+    <button class="relative" id="vidpause">Pause</button>
     <script src="scripts/words.js"></script>
     <script type="text/javascript" src="scripts/script.js"></script>
     <script type="text/javascript" src="scripts/common-words.js"></script>
