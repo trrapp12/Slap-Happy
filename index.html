@@ -7,53 +7,145 @@
   <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
-<body>
-  <div class="gamecontainer">
-    <div class="headline">
-      <p>HANGMAN</p>
-    </div>
-    <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
-      <source src="media/346041025.mp4" type="video/mp4">
-      </video>
-      <div class="">
-        <p class="font">
-          You word has <br>this many characters:
+  <body>
+    <div class="gamecontainer">
+      <div class="triangle">
+        <i class="zmdi zmdi-triangle-down entry" style="position:static; font-size: 90px"></i>
+      </div>
+      <div class="headline" style="position: static">
+        <p>HANGMAN</p>
+      </div>
+      <div class="welcome">
+        <p>
+          You have entered <br>
+          an onerous game <br>
+          of high-stakes <br>
+          hangman. <br>
+          <br>
+          The lorem ipsum <br>
+          is strong in this <br>
+          one. Yes, let the <br>
+          vociferousness flow <br>
+          through you now. <br>
+          <br>
+          The game will proceed <br>
+          as follows: <br>
+          The game has already<br>
+          chosen the expression<br>
+          which will be your demise.<br>
+          <br>
+          As a form of politeness<br>
+          it will show you the <br>
+          amount of characters<br>
+          as represented by " _ "<br>
+          <br>
+          Should you choose to <br>
+          accept the challenge<br>
+          simply put your guess<br>
+          in the input field and click<br>
+          submit<br>
+          <br>
+          The computer has been <br>
+          to not only beat you<br>
+          mentally, but also psychologically.<br>
+          Yes, we will mock you into<br>
+          submission<br>
+          <br>
+          <br>
         </p>
       </div>
-      <div id="guessDisplay" class=" font">
+      <div class="challenge" style="position: static">
+        <p>CHALLENGE</p>
       </div>
-      <div id="guessDisplayII" class=" font" >
+      <div class="chapter2">
+        <p>
+          You have entered <br>
+          an onerous game <br>
+          of high-stakes <br>
+          hangman. <br>
+          <br>
+          The lorem ipsum <br>
+          is strong in this <br>
+          one. Yes, let the <br>
+          vociferousness flow <br>
+          through you now. <br>
+          <br>
+          The game will proceed <br>
+          as follows: <br>
+          The game has already<br>
+          chosen the expression<br>
+          which will be your demise.<br>
+          <br>
+          As a form of politeness<br>
+          it will show you the <br>
+          amount of characters<br>
+          as represented by " _ "<br>
+          <br>
+          Should you choose to <br>
+          accept the challenge<br>
+          simply put your guess<br>
+          in the input field and click<br>
+          submit<br>
+          <br>
+          The computer has been <br>
+          to not only beat you<br>
+          mentally, but also psychologically.<br>
+          Yes, we will mock you into<br>
+          submission<br>
+          <br>
+          <br>
+        </p>
       </div>
-      <br>
-      <br>
-      <div id="frm1" class=" font padding">
-        <input class=" inputfont padding" id="input1" type="text" name="fname" value="" maxlength="1" placeholder="Guess a letter" style="font-size: .8em;"><br>
-        <div class="padding">
-          <button class=" btn" onclick="myFunction()"><p>Try it</p></button>
+      <div class="headline" style="position: static">
+        <p>GO!</p>
+      </div>
+      <div class="welcome">
+        <div class="padding" style="position: static">
+          <p class="font padding">
+            You word has<br>
+            this many<br>
+            characters:
+          </p>
+        </div>
+        <div id="guessDisplay" class="font padding">
+        </div>
+        <div id="guessDisplayII" class="font padding" >
+        </div>
+          <br>
+          <br>
+        <div id="frm1" class="font padding">
+            <input class="inputfont padding" id="input1" type="text" name="fname" value="" maxlength="1" placeholder="Guess a letter" style="font-size: .8em;"><br>
+          <div class="padding">
+            <button class="btn" onclick="myFunction()"><p>Try it</p></button>
+          </div>
+        </div>
+        <div id="tried" class="font padding">
+        </div>
+        <p id="demo" class="font padding"></p>
+        <div id="deathmessage" class="font padding">
+          <audio class="" id="audio" src="../media/233579__roivasugo__boo-you-suck.wav" autoplay></audio>
+        </div>
+          <div class="example e3 padding">
+            <div class="pausecontainer button-group">
+              <div class="btn text" id="vidpause">PAUSE
+              </div>
+              <div class="icon zmdi zmdi-play btn text" style="font-size:2em; text-align:center; padding-top: 5px">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div id="tried" class=" font padding">
+      <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+        <source src="media/346041025.mp4" type="video/mp4">
+      </video>
+      <div class="height">
       </div>
-      <p id="demo" class=" padding font"></p>
-      <div id="deathmessage" class=" font padding">
-        <audio class="" id="audio" src="../media/233579__roivasugo__boo-you-suck.wav" autoplay></audio>
-      </div>
-      <div class="example e3">
-        <div class="pausecontainer button-group">
-          <div class=" btn text" id="vidpause" style="color: transparent; background-color: white">PAUSE
-          </div>
-          <div class="icon zmdi zmdi-play btn text" style="font-size:2em; text-align:center; padding-top: 5px">
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="height">
-    </div>
-    <script src="scripts/words.js"></script>
-    <script type="text/javascript" src="scripts/script.js"></script>
-    <script type="text/javascript" src="scripts/common-words.js"></script>
-    <script type="text/javascript" src="scripts/video.js">
-    </script>
-  </body>
+      <script src="scripts/words.js"></script>
+      <script type="text/javascript" src="scripts/script.js"></script>
+      <script type="text/javascript" src="scripts/common-words.js"></script>
+      <script type="text/javascript" src="scripts/video.js">
+      </script>
+    </body>
   </html>
