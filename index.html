@@ -5,6 +5,8 @@
     <title>Hangman</title>
     <link rel="stylesheet" href="css/master.css" media="screen" title="no title">
     <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <div class="gamecontainer">
@@ -25,20 +27,27 @@
       </div>
       <br>
       <br>
-      <div id="frm1" class="relative font">
-          <input class="relative inputfont" id="input1" type="text" name="fname" value="" maxlength="1" placeholder="Guess your letter here" style="font-size: .8em;"><br>
-            <button class="relative btn" onclick="myFunction()"><p class="buttonfont">Try it</p></button>
+      <div id="frm1" class="relative font padding">
+          <input class="relative inputfont padding" id="input1" type="text" name="fname" value="" maxlength="1" placeholder="Guess a letter" style="font-size: .8em;"><br>
+            <div class="padding">
+              <button class="relative btn" onclick="myFunction()"><p>Try it</p></button>
+            </div>
       </div>
-    <div id="tried" class="relative font">
+    <div id="tried" class="relative font padding">
     </div>
-    <p id="demo" class="relative buttonfont"></p>
-    <div id="deathmessage" class="relative font">
+    <p id="demo" class="relative padding font"></p>
+    <div id="deathmessage" class="relative font padding">
       <audio class="relative" id="audio" src="../media/233579__roivasugo__boo-you-suck.wav" autoplay></audio>
     </div>
-    <button class="relative btn" id="vidpause"><p class="buttonfont">Pause
-    </p></button>
-
+    <div class="example e3">
+      <div class="pausecontainer button-group">
+        <div class="relative btn text" id="vidpause">PAUSE
+          <div class="icon zmdi zmdi-play">
+          </div>
+        </div>
+      </div>
     </div>
+  </div>
         <script src="scripts/words.js"></script>
     <script type="text/javascript" src="scripts/script.js"></script>
     <script type="text/javascript" src="scripts/common-words.js"></script>

@@ -12,7 +12,7 @@ var initialObject = {
 
 console.log(initialObject.word);
 
-function test () {return document.getElementById("input1").value};
+function test () {return document.getElementById("input1").value.toLowerCase()};
 
 
 function split () {
@@ -47,7 +47,7 @@ function countCharacters () {
       initialObject.guessDisplayArr.push(" _ ");
       console.log(initialObject.guessDisplayArr);
     };
-    document.getElementById("guessDisplay").innerHTML = initialObject.guessDisplayArr;
+    document.getElementById("guessDisplay").innerHTML = initialObject.guessDisplayArr.join("");
 };
 
 
@@ -62,7 +62,7 @@ function exchangeValues (guess) {
 
  };
 
- document.getElementById("guessDisplay").innerHTML = initialObject.guessDisplayArr;
+ document.getElementById("guessDisplay").innerHTML = initialObject.guessDisplayArr.join("");
 };
 
 
