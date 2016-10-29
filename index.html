@@ -1,57 +1,59 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Hangman</title>
-    <link rel="stylesheet" href="css/master.css" media="screen" title="no title">
-    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  </head>
-  <body>
-    <div class="gamecontainer">
-      <div class="headline">
-        <p class="headlinetext">HANGMAN</p>
-      </div>
-        <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+<head>
+  <meta charset="utf-8">
+  <title>Hangman</title>
+  <link rel="stylesheet" href="css/master.css" media="screen" title="no title">
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="gamecontainer">
+    <div class="headline">
+      <p>HANGMAN</p>
+    </div>
+    <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
       <source src="media/346041025.mp4" type="video/mp4">
       </video>
-      <div class="relative">
+      <div class="">
         <p class="font">
           You word has <br>this many characters:
         </p>
       </div>
-      <div id="guessDisplay" class="relative font">
+      <div id="guessDisplay" class=" font">
       </div>
-      <div id="guessDisplayII" class="relative font" >
+      <div id="guessDisplayII" class=" font" >
       </div>
       <br>
       <br>
-      <div id="frm1" class="relative font padding">
-          <input class="relative inputfont padding" id="input1" type="text" name="fname" value="" maxlength="1" placeholder="Guess a letter" style="font-size: .8em;"><br>
-            <div class="padding">
-              <button class="relative btn" onclick="myFunction()"><p>Try it</p></button>
-            </div>
+      <div id="frm1" class=" font padding">
+        <input class=" inputfont padding" id="input1" type="text" name="fname" value="" maxlength="1" placeholder="Guess a letter" style="font-size: .8em;"><br>
+        <div class="padding">
+          <button class=" btn" onclick="myFunction()"><p>Try it</p></button>
+        </div>
       </div>
-    <div id="tried" class="relative font padding">
-    </div>
-    <p id="demo" class="relative padding font"></p>
-    <div id="deathmessage" class="relative font padding">
-      <audio class="relative" id="audio" src="../media/233579__roivasugo__boo-you-suck.wav" autoplay></audio>
-    </div>
-    <div class="example e3">
-      <div class="pausecontainer button-group">
-        <div class="relative btn text" id="vidpause">PAUSE
-          <div class="icon zmdi zmdi-play">
+      <div id="tried" class=" font padding">
+      </div>
+      <p id="demo" class=" padding font"></p>
+      <div id="deathmessage" class=" font padding">
+        <audio class="" id="audio" src="../media/233579__roivasugo__boo-you-suck.wav" autoplay></audio>
+      </div>
+      <div class="example e3">
+        <div class="pausecontainer button-group">
+          <div class=" btn text" id="vidpause" style="color: transparent; background-color: white">PAUSE
+          </div>
+          <div class="icon zmdi zmdi-play btn text" style="font-size:2em; text-align:center; padding-top: 5px">
           </div>
         </div>
       </div>
     </div>
-  </div>
-        <script src="scripts/words.js"></script>
+    <div class="height">
+    </div>
+    <script src="scripts/words.js"></script>
     <script type="text/javascript" src="scripts/script.js"></script>
     <script type="text/javascript" src="scripts/common-words.js"></script>
     <script type="text/javascript" src="scripts/video.js">
     </script>
   </body>
-</html>
+  </html>
