@@ -1,7 +1,7 @@
 
 
 /*****************   General CSS Rules  *************/
-
+a {text-decoration: none; color: none}
 
 * {
   margin: 0px;
@@ -15,7 +15,6 @@ body {
   height: auto;
   position: absolute;
 }
-
 
 .padding {
   width: 100%;
@@ -95,6 +94,11 @@ video#bgvid {
   padding-top: 1em;
 }
 
+#headline2 {
+  padding-left: 0;
+  position: static;
+}
+
 .sexy_line_left{
     display:block;
     border:none;
@@ -128,7 +132,7 @@ video#bgvid {
   width: 20%;
   margin-left: 10%;
   margin-right: 70%;
-  position: absolute;
+  line-height: 200%;
 }
 
 .entry {
@@ -142,7 +146,8 @@ video#bgvid {
   text-align: center;
   color: white;
   font-size: 30px;
-  font-weight: 100;
+  font-weight: lighter;
+  font-stretch: ultra-expanded;
   position: relative;
   font-size: 50px;
 }
@@ -194,11 +199,7 @@ video#bgvid {
     padding-left: 1px;
 }
 
-.chapter2 {
-  font-family: 'Open Sans', cursive;
-  font-size: 1em;
-  color: 	white;
-  padding-top: 40px;
+.therules {
   width: 20%;
   margin-right: 2%;
   margin-left: 78%;
