@@ -32,7 +32,7 @@ body {
 }
 
 .font {
-  font-family: 'Cabin Sketch', cursive;
+  font-family: 'Poiret One', cursive;
   font-size: 1.5em;
   color: white;
 }
@@ -82,7 +82,7 @@ video#bgvid {
 
 
 .headline {
-  font-family: 'Cabin Sketch', cursive;
+  font-family: 'Poiret One', cursive;
   font-size: 8em;
   background-color: transparent;
   color: white;
@@ -92,6 +92,7 @@ video#bgvid {
   width: 90%;
   position: relative;
   padding-left: 1em;
+  padding-top: 1em;
 }
 
 .sexy_line_left{
@@ -113,7 +114,7 @@ video#bgvid {
 }
 
 .inputfont {
-  font-family: 'Cabin Sketch', cursive;
+  font-family: 'Poiret One', cursive;
   font-size: 1em;
   color: 	rgb(98, 71, 75);
   background-color: white;
@@ -127,6 +128,7 @@ video#bgvid {
   width: 20%;
   margin-left: 10%;
   margin-right: 70%;
+  position: absolute;
 }
 
 .entry {
@@ -179,7 +181,7 @@ video#bgvid {
 }
 
 .challenge {
-    font-family: 'Cabin Sketch', cursive;
+    font-family: 'Poiret One', cursive;
     font-size: 8em;
     background-color: transparent;
     color: white;
@@ -207,7 +209,7 @@ video#bgvid {
 
 
 .btn {
-  font-family: 'Cabin Sketch', cursive;
+  font-family: 'Poiret One', cursive;
   width: 100%;
   background: #ffffff;
   font-size: 40px;
