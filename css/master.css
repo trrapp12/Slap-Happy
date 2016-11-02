@@ -83,8 +83,7 @@ video#bgvid {
 
 .headline {
   font-family: 'Cabin Sketch', cursive;
-  font-size: 4em;
-  border: 2px solid white;
+  font-size: 8em;
   background-color: transparent;
   color: white;
   text-align: left;
@@ -93,6 +92,24 @@ video#bgvid {
   width: 90%;
   position: relative;
   padding-left: 1em;
+}
+
+.sexy_line_left{
+    display:block;
+    border:none;
+    color:white;;
+    height:2px;
+    background:transparent;
+    background: linear-gradient( 45deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.sexy_line_right{
+    display:block;
+    border:none;
+    color:white;;
+    height:2px;
+    background:transparent;
+    background: linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
 }
 
 .inputfont {
@@ -121,12 +138,49 @@ video#bgvid {
 .triangle {
   width: 100%;
   text-align: center;
+  color: white;
+  font-size: 30px;
+  font-weight: 100;
+  position: relative;
+  font-size: 50px;
+}
+
+#down1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 30%;
+  margin: -70px 0px 0px -25px;
+  /*-webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);*/
+}
+
+#down2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 30%;
+  margin: -60px 0px 0px -25px;
+  /*-webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);*/
+}
+
+#down3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 30%;
+  margin: -50px 0px 0px -25px;
+  /*-webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);*/
 }
 
 .challenge {
     font-family: 'Cabin Sketch', cursive;
-    font-size: 4em;
-    border: 2px solid white;
+    font-size: 8em;
     background-color: transparent;
     color: white;
     text-align: right;

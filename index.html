@@ -8,14 +8,21 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css" rel="stylesheet">
 </head>
   <body>
     <div class="gamecontainer">
       <div class="triangle">
-        <i class="zmdi zmdi-triangle-down entry" style="position:static; font-size: 90px"></i>
+        <i class="zmdi zmdi-chevron-down fadeIn1" id="down1"></i>
+        <i class="zmdi zmdi-chevron-down fadeIn2" id="down2"></i>
+        <i class="zmdi zmdi-chevron-down fadeIn3" id="down3"></i>
       </div>
-      <div class="headline" style="position: static">
+      <div class="headline" id="headline" data-aos-duration="2000" data-aos="fade-left">
         <p>HANGMAN</p>
+        <div>
+          <span class="sexy_line_left"></span>
+        </div>
       </div>
       <div class="welcome">
         <p>
@@ -56,8 +63,11 @@
           <br>
         </p>
       </div>
-      <div class="challenge" style="position: static">
+      <div class="challenge" data-aos="fade-right" data-aos-duration="2000" style="position: static">
         <p>CHALLENGE</p>
+        <div>
+          <span class="sexy_line_right"></span>
+        </div>
       </div>
       <div class="chapter2">
         <p>
@@ -98,8 +108,11 @@
           <br>
         </p>
       </div>
-      <div class="headline" style="position: static">
+      <div class="headline" data-aos="fade-left" data-aos-duration="2000" style="position: static">
         <p>GO!</p>
+        <div>
+          <span class="sexy_line_left"></span>
+        </div>
       </div>
       <div class="welcome">
         <div class="padding" style="position: static">
@@ -145,7 +158,10 @@
       <script src="scripts/words.js"></script>
       <script type="text/javascript" src="scripts/script.js"></script>
       <script type="text/javascript" src="scripts/common-words.js"></script>
-      <script type="text/javascript" src="scripts/video.js">
+      <script type="text/javascript" src="scripts/video.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
       </script>
+      <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
+      <script>AOS.init();</script>
     </body>
   </html>
