@@ -3,7 +3,7 @@ Array.prototype.randomElement = function () {
 };
 
 var initialObject = {
-  maxtries: 8,
+  maxtries: 10,
   tries: 0,
   guessDisplayButton: [],
   word: arrWords.randomElement()
@@ -31,7 +31,7 @@ function win () {
   for (var i = 0; i < initialObject.answerArr.length; ++i) {
      if (initialObject.answerArr[i] !== initialObject.guessDisplayArr[i]) return true;
    }
-   document.getElementById("deathmessage").innerHTML= "You have won the game";
+   document.getElementById("deathmessage").innerHTML= "You won the game";
    return false;
 };
 
