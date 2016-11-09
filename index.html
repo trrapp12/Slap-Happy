@@ -19,13 +19,13 @@
       <i class="zmdi zmdi-chevron-down" id="down3"></i>
     </div>
     <div class="headline" id="headline" data-aos-duration="2000" data-aos="fade-left">
-      <p>HANGMAN</p>
+      <p>SLAP</p>
       <div>
         <span class="sexy_line_left"></span>
       </div>
     </div>
     <div class="challenge" data-aos="fade-right" data-aos-duration="2000" style="position: static">
-      <p>CHALLENGE</p>
+      <p>HAPPY</p>
       <div>
         <span class="sexy_line_right"></span>
       </div>
@@ -56,7 +56,7 @@
       </p>
     </div>
     <div class="challenge" data-aos="fade-right" data-aos-duration="2000" style="position: static">
-      <p>THE RULES</p>
+      <p>THE PROCESS</p>
       <div>
         <span class="sexy_line_right"></span>
       </div>
@@ -125,39 +125,49 @@
         <span class="sexy_line_left"></span>
       </div>
     </div>
-    <div class="partition">
-      <div class="padding" style="position: static">
-        <p class="font padding">
-          You word has<br>
-          this many<br>
-          characters:
-        </p>
-      </div>
-      <div id="guessDisplay" class="font padding">
-      </div>
-      <div id="guessDisplayII" class="font padding" >
-      </div>
-      <br>
-      <br>
-      <div id="frm1" class="font padding">
-        <input class="inputfont padding" id="input1" type="text" name="fname" value="" maxlength="1" placeholder="Guess a letter" style="font-size: .8em;"><br>
-        <div class="padding">
-          <button class="btn" onclick="myFunction()"><p>Try it</p></button>
-        </div>
-      </div>
-      <p id="demo" class="font padding"></p>
-      <div id="deathmessage" class="font padding">
-        <audio class="" id="audio" src="../media/233579__roivasugo__boo-you-suck.wav" autoplay></audio>
-      </div>
-      <div class="example e3 padding">
-        <div class="pausecontainer button-group">
-          <div class="btn text" id="vidpause">PAUSE
-          </div>
-          <div class="icon zmdi zmdi-play btn text" style="font-size:2em; text-align:center; padding-top: 5px">
+    <div class="container-partition">
+      <div class="partition">
+        <div class="gamecontrols">
+          <div class="padding">
+            <p class="font padding">
+              You word has<br>
+              this many<br>
+              characters:
+            </p>
+            <div id="guessDisplay" class="font padding">
+            </div>
+            <div id="guessDisplayII" class="font padding" >
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <div class="partition middle-column"
+        <div class="gamecontrols">
+          <div style="position: static">
+
+            <div id="frm1" class="font">
+              <input class="inputfont padding" id="input1" type="text" name="fname" value="" maxlength="1" placeholder="TYPE GUESS" style="font-size: .8em;"><br>
+              <div class="tryit padding">
+                <button class="btn" onclick="myFunction()"><p>SUBMIT</p></button>
+                <p class="font padding">
+                  Letters Guessed:
+                </p>
+                <p id="demo" class="font padding box"></p>
+                <div id="deathmessage" class="font padding"><audio class="" id="audio" src="../media/233579__roivasugo__boo-you-suck.wav" autoplay></audio>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+          <div class=" e3 padding">
+            <!-- <div class="pausecontainer button-group">
+              <div class="btn text" id="vidpause">PAUSE
+              </div>
+              <div class="icon zmdi zmdi-play btn text" style="font-size:2em; text-align:center; padding-top: 5px">
+              </div>
+            </div> -->
+          </div>
   </div>
   <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
     <source src="media/346041025.mp4" type="video/mp4">

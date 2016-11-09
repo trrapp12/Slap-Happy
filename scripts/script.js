@@ -10,6 +10,14 @@ var initialObject = {
 
 };
 
+function reset() {
+  initialObject.maxtries = 10;
+  initialObject.tries = 0;
+  initialObject.guessDisplayButton = [];
+  initialObject.word = arrWords.randomElement()
+}
+
+
 console.log(initialObject.word);
 
 function test () {return document.getElementById("input1").value.toLowerCase()};
@@ -32,7 +40,8 @@ function win () {
      if (initialObject.answerArr[i] !== initialObject.guessDisplayArr[i]) return true;
    }
    document.getElementById("deathmessage").innerHTML= "You won the game";
-   return false;
+
+   reset();
 };
 
 
