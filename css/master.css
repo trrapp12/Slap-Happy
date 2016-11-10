@@ -373,3 +373,22 @@ input[type=text]:focus {
         display: none;
     }
 }
+
+/**********************SVG Layer************************/
+
+#Layer_1 {
+  animation: draw 3.5s infinite;
+}
+
+.bg  {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes draw {
+  50% {
+    stroke-dashoffset:0;
+  }
+}
