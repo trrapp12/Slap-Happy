@@ -8,6 +8,9 @@ a {text-decoration: none; color: none}
   padding: 0px;
 }
 
+br {
+  display: none;
+}
 .clearfix {
   overflow: auto;
   content:" ";
@@ -21,6 +24,7 @@ body {
   width: 100%;
   height: auto;
   position: absolute;
+  background-color: magenta;
 }
 
 .black {
@@ -42,7 +46,7 @@ body {
 }
 
 .font {
-  font-family: 'Poiret One', cursive;
+  font-family: Arial cursive;
   font-size: 1.5em;
   color: black;
 }
@@ -112,7 +116,7 @@ video#bgvid {
   font-size: 1em;
   width: 100%;
   height: 80vh;
-  margin-top: 200px;
+  margin-top: 5vh;
   margin-right: 70%;
   line-height: 200%;
   position: absolute;
@@ -123,18 +127,14 @@ video#bgvid {
 
 
 .headline {
-  font-family: 'Poiret One', cursive;
-  font-size: 8em;
-  background-color: transparent;
-  color: white;
-  text-align: left;
+  font-family: 'Open Sans', cursive;
+  font-size: 1em;
+  color: 	white;
+  padding-top: 40px;
+  width: 80%;
   margin-left: 10%;
-  margin-right: 0%;
-  width: 90%;
-  position: relative;
-  padding-left: 1em;
-  padding-top: 1.5em;
-
+  margin-right: 10%;
+  line-height: 200%;
 }
 
 #headline2 {
@@ -170,11 +170,11 @@ video#bgvid {
 .welcome {
   font-family: 'Open Sans', cursive;
   font-size: 1em;
-  color: 	white;
-  padding-top: 40px;
-  width: 20%;
+  color: white;
+  padding-top: 10vh;
+  width: 80%;
   margin-left: 10%;
-  margin-right: 70%;
+  margin-right: 10%;
   line-height: 200%;
 }
 
@@ -186,8 +186,8 @@ video#bgvid {
 
 .triangle {
   width: 100%;
-  top: 20vh;
   text-align: center;
+  color: black;
   font-size: 30px;
   font-weight: lighter;
   font-stretch: ultra-expanded;
@@ -201,14 +201,10 @@ video#bgvid {
   left: 50%;
   height: 30%;
   margin: -70px 0px 0px -25px;
-  color: rgba(255, 255, 255, 1);
-  -webkit-animation: smooth 3s ease-in;
-  -moz-animation: smooth 3s ease-in;
-  -o-animation: smooth 3s ease-in;
-  -ms-animation: smooth 3s ease-in;
-  animation: smooth 3s ease-in;
-  animation-iteration-count: infinite;
-
+  color: white;
+  /*-webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);*/
 }
 
 #down2 {
@@ -217,14 +213,10 @@ video#bgvid {
   left: 50%;
   height: 30%;
   margin: -60px 0px 0px -25px;
-  color: rgba(255, 255, 255, 1);
-  -webkit-animation: smooth 3s ease-in;
-  -moz-animation: smooth 3s ease-in;
-  -o-animation: smooth 3s ease-in;
-  -ms-animation: smooth 3s ease-in;
-  animation: smooth 3s ease-in;
-  animation-delay: 1s;
-  animation-iteration-count: infinite;
+  color: white;
+  /*-webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);*/
 }
 
 #down3 {
@@ -233,39 +225,27 @@ video#bgvid {
   left: 50%;
   height: 30%;
   margin: -50px 0px 0px -25px;
-  color: rgba(255, 255, 255, 1);
-  -webkit-animation: smooth 3s ease-in;
-  -moz-animation: smooth 3s ease-in;
-  -o-animation: smooth 3s ease-in;
-  -ms-animation: smooth 3s ease-in;
-  animation: smooth 3s ease-in;
-  animation-delay: 2s;
-  animation-iteration-count: infinite;
-}
-
-@-webkit-keyframes smooth {
-  0% { opacity: 0;}
-  100% { opacity: 1;}
+  color: white;
+  /*-webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);*/
 }
 
 .challenge {
-    font-family: 'Poiret One', cursive;
-    font-size: 8em;
-    background-color: transparent;
-    color: white;
-    text-align: right;
-    margin-right: 10%;
-    margin-left: 0%;
-    width: 90%;
-    position: relative;
-    padding-right: 1em;
-    padding-left: 1px;
+  font-family: 'Open Sans', cursive;
+  font-size: 1em;
+  color: white;
+  padding-top: 5vh;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  line-height: 200%;
 }
 
 .therules {
-  width: 20%;
-  margin-right: 2%;
-  margin-left: 78%;
+width: 80%;
+margin-left: 10%;
+margin-right: 10%;
 }
 
 .tryit{

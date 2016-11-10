@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
   <title>Hangman</title>
-  <link rel="stylesheet" href="css/master.css" media="screen" title="no title">
+  <link rel="stylesheet" media="screen and (max-width: 640px)" href="css/mobile.css" title="no title">
+  <link rel="stylesheet" href="css/master.css" media="screen and (min-width: 641px)" title="no title">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -32,86 +33,61 @@
     </div>
     <div class="welcome">
       <p>
+        WELCOME:
 
-        Trevor Rapp is a<br>
-        JavaScript student<br>
-        at the Iron-Yard <br>
-        in Salt Lake City, UT.<br>
-        His interests include<br>
-        JavaScript, Python, ReactJS<br>
-        HTML5, CSS3, <br>
-        UrbEx photography,<br>
-        and engaging in <br>
-        trampoline wars <br>
-        on old mattresses <br>
-        with his three daughters.<br>
+        This is a portfolio project<br>
+        for Trevor Rapp, a <br>
+        Front-End Development student<br>
+        at the Iron-Yard, <br>
+        Salt Lake City, UT.<br>
+        He loves JavaScript<br>
+        Python, ReactJS, HTML5<br>
+        CSS3, UrbEx photography,<br>
+        and jumping wars on his <br>
+        bed with his 3 daughters<br>
         <br>
-
-        Feel free to check-out <br>
-        more code at my <a href="https://github.com/trrapp12-ironyard" target="blank">github.</a> <br>
-        Or checkout my <br>
-        <a href="http://web-karma.org" target="blank">website.</a><br>
+        See his code at his <br><a href="https://github.com/trrapp12-ironyard" target="blank">github.</a><br>
+        Or at his<a href="http://web-karma.org" target="blank">website.</a><br>
         <br>
         <br>
       </p>
     </div>
     <div class="challenge" data-aos="fade-right" data-aos-duration="2000" style="position: static">
-      <p>THE PROCESS</p>
+      <p>THE GAME</p>
       <div>
         <span class="sexy_line_right"></span>
       </div>
     </div>
     <div class="therules welcome">
       <p>
-        You have entered <br>
-        an onerous game <br>
-        of high-stakes <br>
-        hangman. <br>
+        Think of this as an onerous, <br>
+        high-stakes game of hangman. <br>
         <br>
-        This is a fully <br>
-        functional Hangman <br>
-        game. Rules follow <br>
-        the standard IAUMSSSD <br>
-        (Idaho and Utah <br>
-        Mormon Sunday School <br>
-        Sub-Demographic) <br>
-        rules of play.<br>
-        <br>
-        The game works<br>
-        as follows: <br>
-        Intense JavaScript<br>
-        Math.Random () choses <br>
+        The game uses <br>
+        Math.Random to choose <br>
         a word from <br>
-        a pre-defined dictionary. <br>
+        pre-defined dictionary. <br>
         <br>
-        A broad array<br>
-        (not a JS array, the "array" <br>
-        that I used to mean <br>
-        before I learned JS) <br>
-        of for-loops loop through<br>
-        arrays (the JS type) <br>
-        and count the number <br>
-        of characters in the <br>
-        word, and then display <br>
-        them for your viewing <br>
-        pleasure.
+        A system of functions<br>
+        iterate through the word, <br>
+        count the number <br>
+        of characters,<br>
+        and display an equivalent<br>
+        number of "_" 's to show<br>
+        you how many letters there are. <br>
         <br>
         <br>
-        You then type in your guess<br>
+        Then you type your guess<br>
         and an on-click event <br>
-        brings a cascading sheet<br>
-        of JS logic (hmm... <br>
-        does a CSS and JS <br>
-        pun make it a <br>
-        React pun?) to bear <br>
-        which compares the <br>
-        guess to the word <br>
-        and decides if you <br>
-        have lost yet. <br>
+        activates more funcions <br>
+        which compare the <br>
+        characters in the guess array<br>
+        to the selected word, depricates<br>
+        the amount of tries, and<br>
+        determines if you have lost <br>
         <br>
         <br>
-        The computer is ready <br>
-        to not only beat you<br>
+        Be ready to not just be beat <br>
         mentally, but also psychologically.<br>
         Yes, we will mock you into<br>
         submission.  Are you ready?<br>
@@ -152,8 +128,9 @@
                 <p class="font padding">
                   Letters Guessed:
                 </p>
-                <p id="demo" class="font padding box"></p>
+                <p id="demo" class="font padding box clearfix"></p>
                 <div id="deathmessage" class="font padding"><audio class="" id="audio" src="../media/233579__roivasugo__boo-you-suck.wav" autoplay></audio>
+                <audio class="" id="audio2" src="../media/317406__otterbahn__flannel-lumberjack.wav" autoplay></audio>
                 </div>
               </div>
             </div>

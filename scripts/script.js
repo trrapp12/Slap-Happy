@@ -11,10 +11,19 @@ var initialObject = {
 };
 
 function reset() {
+
+  var audio2 = new Audio('media/317406__otterbahn__flannel-lumberjack.wav');
+
   initialObject.maxtries = 10;
   initialObject.tries = 0;
   initialObject.guessDisplayButton = [];
   initialObject.word = arrWords.randomElement()
+
+  audio2.play()
+
+  document.getElementById("guessDisplay").innerHTML = "What are you?  A lumber Jack? (that means you won...)"
+
+  console.log(initialObject);
 }
 
 
@@ -39,7 +48,7 @@ function win () {
   for (var i = 0; i < initialObject.answerArr.length; ++i) {
      if (initialObject.answerArr[i] !== initialObject.guessDisplayArr[i]) return true;
    }
-   document.getElementById("deathmessage").innerHTML= "You won the game";
+  //  document.getElementById("deathmessage").innerHTML= "You won the game";
 
    reset();
 };
