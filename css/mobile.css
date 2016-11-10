@@ -24,7 +24,6 @@ body {
   width: 100%;
   height: auto;
   position: absolute;
-  background-color: magenta;
 }
 
 .black {
@@ -32,7 +31,6 @@ body {
 }
 
 .padding {
-  width: 100%;
   height: auto;
   padding-top: 20px;
 }
@@ -52,10 +50,11 @@ body {
 }
 
 .box {
-  border: 1px solid gray;
-  padding: 1.5em;
-  margin-top: .5em;
-}
+      border: 1px solid gray;
+      padding-top: .5em;
+      padding-bottom: .5em;
+      margin-top: .5em;
+  }
 /*****************  Video CSS  **************************/
 
 
@@ -89,7 +88,7 @@ video#bgvid {
 .gamecontainer {
   top: 500px;
   width: 100%;
-  position: absolute;
+
   margin-left: auto;
   margin-right: auto;
   background-color: rgba (255, 255, 255, .2)
@@ -97,34 +96,34 @@ video#bgvid {
 
 .partition {
   color: black;
-  padding-right: 5vh;
-  padding-left: 5vh;
-  width: 80vw
-  margin-left: 10vw;
-  margin-right: 10vw;
-  position: absolute;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
   display: inline-block;
 }
 
-.middle-column {
-  padding-right: 5vh;
-  padding-left: 5vh;
-  width: 80vw;
-  margin-left: 10vw;
-  margin-right: 10vw;
-  display:inline-block;
+.partitionII {
+  color: black;
+  width: 100%;
+}
+
+#frm1 {
+  width: 100%;
 }
 
 .container-partition {
   font-family: 'Open Sans', cursive;
   font-size: 1em;
   width: 100vw;
-  height: 80vh;
+  height: 120vh;
   margin-top: 5vh;
-  margin-right: 70%;
+  margin-bottom: -5vh;
+  margin-left: 0px
+  margin-right: 0px;
   line-height: 200%;
-  position: absolute;
   background-color: white;
+  border: 0px;
+  bottom: 0;
 }
 
 /****************   Specific CSS  ***********************/
@@ -264,25 +263,25 @@ video#bgvid {
 }
 
 .therules {
-width: 80%;
-margin-left: 10%;
-margin-right: 10%;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .tryit{
-  width: 100px;
+  width: 100%;
 }
 
 .gamecontrols {
-  position: absolute;
-  top: 15%;
-  bottom: 15%;
-  width: 80vw;
-  float: left;
-  margin-left: auto
-  margin-right auto;
-  padding: 2.5em;
-  border: 1px solid gray;
+    top: 15%;
+    bottom: 15%;
+    width: 80%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2.5em;
+    border: 1px solid gray;
 }
 /******************   Button   ************************/
 
@@ -355,7 +354,7 @@ input[type=text] {
     outline: none;
     color: white;
     line-height: 35px;
-    width: 10em;
+    width: 100%;
 }
 
 input[type=text]:focus {
