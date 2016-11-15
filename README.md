@@ -29,10 +29,10 @@
 - [x] Use onclick functionality to start game.
 - [x] Integrate video and audio with certain conditions in the game (i.e. winning and losing).
 - [x] Include 
-  a. GitHub Repo url, containing at least:
-  b. index.html
-  c. One or more CSS files (e.g. css/main.css)
-  d. One or more JavaScript files (e.g. js/main.js)
+    a. GitHub Repo url, containing at least:
+    b. index.html
+    c. One or more CSS files (e.g. css/main.css)
+    d. One or more JavaScript files (e.g. js/main.js)
 <br/>
 <br/>
 ###Project published at: 
