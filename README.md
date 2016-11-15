@@ -1,42 +1,44 @@
 # ice-cream
 ---
 
-![d3_d4_conversion screen shot](https://cloud.githubusercontent.com/assets/11747875/20286878/3dfed1d8-aa86-11e6-99dd-981ea0a6db9f.png)
+![d3_d4_conversion screen shot](https://cloud.githubusercontent.com/assets/11747875/20287850/5bbc3ebc-aa8c-11e6-806e-71a2a0a1b6d8.png)
 
 <br/>
 <br/>
 
+###Rules of the Game:
+---
+
+1. The app starts by choosing a random word
+2. The player can guess a single letter at a time
+3. The player has a fixed number of turns in which to guess all of the letters in the word
+4. The app should indicate when the player has won or lost
 
 ###This project demonstrates the following:
 ---
 
-1. Build a homepage for your local ice cream shop. 
-2. Initialize and push/pull to a GitHub repository.
-3. Regular commits and use proper semantic HTML tags.
-4. Include 
-  a. the shop's name
-  b. a brief history (use lorem ipsum)
-  c. a logo (any image you can find online)
-  d. the store's hours and contact information
-  e. flavors available (list at least 5 and no more than 42) with:
-    1.name, calorie count, and whether it is sugar free or not
-    2.a link to wikipedia for that flavor
-5. See every other flavor on the menu alternate its background color (commonly called "zebra striping")
-6. Restrictions:
-  a. any libraries, extension, modules, or frameworks other than normalize.css and font-awesome
-  flexbox
-  b. animation - to be clear I’m talking about CSS3, canvas, and their ilk; you may use animated gifs, but keep them portfolio   professional if you do.
-  c. tables for layout of anything other than actual tabular data (depending on your design the ice cream flavors, whether       they’re sugar free or not, and their calories may qualify as tabular data)
-7. Use ```<aside>``` and CSS to create a left side-column with margins.
-8. Mobile Responsive design
-9. Social Media links
+1. Correct use of functions, conditionals, loops, arrays.
+2. Properly sequence JavaScript statements.
+3. Change the DOM based on application state (win/loss, valid/invalid guess).
+4. Select a random word from a dictionary of words.
+5. Display all guesses on the user's screen so the user knows what letters he/she has already guessed.
+6. Display a visual indication for each letter in the word.
+7. Display the number of turns remaining.
+8. Decrement the number of turns remaining.
+9. Display letters guessed in the position that they are contained in the word.
+10. Use onclick functionality to start game.
+11. Integrate video and audio with certain conditions in the game (i.e. winning and losing).
+12. Include 
+  a. GitHub Repo url, containing at least:
+  b. index.html
+  c. One or more CSS files (e.g. css/main.css)
+  d. One or more JavaScript files (e.g. js/main.js)
 <br/>
 <br/>
-
 ###Project published at: 
 ---
 
-[Betty's Ice Cream Parlor](https://trrapp12-ironyard.github.io/ice-cream/)
+[Hangman](https://trrapp12-ironyard.github.io/ice-cream/)
 <br/>
 <br/>
 ###More Information:
