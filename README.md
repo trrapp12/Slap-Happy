@@ -17,7 +17,7 @@
 ###This project demonstrates the following:
 ---
 
-1. Correct use of functions, conditionals, loops, arrays.
+[x] Correct use of functions, conditionals, loops, arrays.
 2. Properly sequence JavaScript statements.
 3. Change the DOM based on application state (win/loss, valid/invalid guess).
 4. Select a random word from a dictionary of words.
@@ -38,7 +38,7 @@
 ###Project published at: 
 ---
 
-[Hangman](https://trrapp12-ironyard.github.io/ice-cream/)
+[Hangman](https://trrapp12-ironyard.github.io/hangman/)
 <br/>
 <br/>
 ###More Information:
