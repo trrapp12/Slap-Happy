@@ -1,7 +1,7 @@
-# ice-cream
+# Hangman (JavaScript)
 ---
 
-![d3_d4_conversion screen shot](https://cloud.githubusercontent.com/assets/11747875/20287850/5bbc3ebc-aa8c-11e6-806e-71a2a0a1b6d8.png)
+![Hangman screen-shot](https://cloud.githubusercontent.com/assets/11747875/20287850/5bbc3ebc-aa8c-11e6-806e-71a2a0a1b6d8.png)
 
 <br/>
 <br/>
@@ -35,6 +35,7 @@
     d. One or more JavaScript files (e.g. js/main.js)
 <br/>
 <br/>
+
 ###Project published at: 
 ---
 
