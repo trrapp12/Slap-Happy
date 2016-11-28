@@ -1,4 +1,4 @@
-# Hangman (JavaScript)
+# Slap Happy (JavaScript)
 ---
 
 ![Hangman screen-shot](https://cloud.githubusercontent.com/assets/11747875/20287850/5bbc3ebc-aa8c-11e6-806e-71a2a0a1b6d8.png)
