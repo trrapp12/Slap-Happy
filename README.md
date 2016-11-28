@@ -26,13 +26,21 @@
 - [x] Display the number of turns remaining.
 - [x] Decrement the number of turns remaining.
 - [x] Display letters guessed in the position that they are contained in the word.
-- [x] Use onclick functionality to start game.
-- [x] Integrate video and audio with certain conditions in the game (i.e. winning and losing).
 - [x] Include 
     a. GitHub Repo url, containing at least:
     b. index.html
     c. One or more CSS files (e.g. css/main.css)
     d. One or more JavaScript files (e.g. js/main.js)
+<br/>
+<br/>
+###Ways I challenged myself:
+---
+
+- [x] Use JavaScript to trigger audio on state changes(i.e. win/lose).
+- [x] Use onclick functionality to start game.
+- [x] Incorporate video into CSS.
+- [x] Refactor with @media query to make mobile ready
+- [x] Responsive design
 <br/>
 <br/>
 
