@@ -1,7 +1,7 @@
 # Slap Happy (JavaScript)
 ---
 
-![Hangman screen-shot](https://cloud.githubusercontent.com/assets/11747875/20287850/5bbc3ebc-aa8c-11e6-806e-71a2a0a1b6d8.png)
+![Hangman screen-shot](https://cloud.githubusercontent.com/assets/11747875/20688946/44eaeb6c-b580-11e6-968e-9a1ec5737743.png)
 
 <br/>
 <br/>
