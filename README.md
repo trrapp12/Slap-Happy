@@ -6,7 +6,7 @@
 <br/>
 <br/>
 
-###Rules of the Game:
+### Rules of the Game:
 ---
 
 1. The app starts by choosing a random word
@@ -14,7 +14,7 @@
 3. The player has a fixed number of turns in which to guess all of the letters in the word
 4. The app should indicate when the player has won or lost
 
-###This project demonstrates the following:
+### This project demonstrates the following:
 ---
 
 - [x] Correct use of functions, conditionals, loops, arrays.
@@ -33,7 +33,7 @@
     d. One or more JavaScript files (e.g. js/main.js)
 <br/>
 <br/>
-###Ways I challenged myself:
+### Ways I challenged myself:
 ---
 
 - [x] Use JavaScript to trigger audio on state changes(i.e. win/lose).
@@ -44,7 +44,7 @@
 <br/>
 <br/>
 
-###Project published at: 
+### Project published at: 
 ---
 
 [Hangman](https://trrapp12-ironyard.github.io/hangman/)
