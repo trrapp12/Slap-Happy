@@ -33,7 +33,9 @@
     d. One or more JavaScript files (e.g. js/main.js)
 <br/>
 <br/>
+
 ### Ways I challenged myself:
+
 ---
 
 - [x] Use JavaScript to trigger audio on state changes(i.e. win/lose).
@@ -45,6 +47,7 @@
 <br/>
 
 ### Project published at: 
+
 ---
 
 [Hangman](https://trrapp12-ironyard.github.io/hangman/)
