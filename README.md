@@ -31,8 +31,6 @@
     b. index.html
     c. One or more CSS files (e.g. css/main.css)
     d. One or more JavaScript files (e.g. js/main.js)
-<br/>
-<br/>
 
 ### Ways I challenged myself:
 
@@ -43,8 +41,6 @@
 - [x] Incorporate video into CSS.
 - [x] Refactor with @media query to make mobile ready
 - [x] Responsive design
-<br/>
-<br/>
 
 ### Project published at: 
 
