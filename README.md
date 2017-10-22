@@ -6,6 +6,10 @@
 <br/>
 <br/>
 
+<a href="https://imgflip.com/gif/1y1iy7"><img src="https://i.imgflip.com/1y1iy7.gif" title="made at imgflip.com"/></a>
+<br />
+<br />
+
 ### Rules of the Game:
 ---
 
