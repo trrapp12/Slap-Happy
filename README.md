@@ -3,17 +3,6 @@
 
 ![slaphappy](https://user-images.githubusercontent.com/11747875/32625008-477ffbaa-c548-11e7-88b6-5c2f76ebdbbd.gif)
 
-
-<br/>
-<br/>
-
-<a href="https://imgflip.com/gif/1y1iy7"><img src="https://i.imgflip.com/1y1iy7.gif" title="made at imgflip.com"/></a>
-<br />
-<br />
-<a href="https://imgflip.com/gif/1y1j5t"><img src="https://i.imgflip.com/1y1j5t.gif" title="made at imgflip.com"/></a>
-<br />
-<br />
-
 ### Rules of the Game:
 ---
 
