@@ -11,17 +11,10 @@ var initialObject = {
 
 function reset() {
 
-  var audio2 = new Audio('media/ES_Happy_Birthday_33_SFX_Producer.mp3');
-
   initialObject.maxtries = 10;
   initialObject.tries = 0;
   initialObject.guessDisplayButton = [];
   initialObject.word = arrWords.randomElement()
-
-  audio2.play()
-
-  document.getElementById("guessDisplay").innerHTML = "You Won!!! Happy Birthday!"
-
   console.log(initialObject);
 }
 
@@ -52,12 +45,15 @@ function displayWord (text) {
 
 
 function win () {
+      var audio2 = new Audio('media/ES_Happy_Birthday_33_SFX_Producer.mp3');
   initialObject.answerArr = initialObject.word.split("")
 
   for (var i = 0; i < initialObject.answerArr.length; ++i) {
      if (initialObject.answerArr[i] !== initialObject.guessDisplayArr[i]) return true;
    }
   //  document.getElementById("deathmessage").innerHTML= "You won the game";
+  displayMessage("Happy Birthday!!! You're the winner!!!");
+  audio2.play();
 
    reset();
 };
