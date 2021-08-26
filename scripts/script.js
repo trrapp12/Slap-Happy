@@ -26,13 +26,13 @@ function reset() {
 console.log(initialObject.word);
 
 function test () {
-  var letterRE = /^[A-Za-z]{1}/;
+  var letterRE = /[A-Za-z]/
   var input = document.getElementById("input1").value.toLowerCase();
-  console.log("letterRE is: " + letterRE + ". And input is: " + input);
-  if (input.match(letterRE) && !input.length > 1) {
+  // console.log("letterRE is: " + letterRE + ". And input is: " + input);
+  if (input.match(letterRE) && input.length < 2) {
     return input
   } else {
-    alert("You Rascal!  You either tried to enter more than one letter, or tried to enter a non-letter character. You won't get away with this!")
+    alert("You Rascal! You either tried to guess more than one letter at once, or you tried to guess something that wasn't a letter. You won't get away with this!")
   }
 
 };
@@ -140,6 +140,8 @@ function depricateTries () {
   if (initialObject.tries < initialObject.maxtries) {
     initialObject.tries += 1;
     initialObject.turnsLeft -= 1;
+    var turnsLeft = initialObject.turnsLeft;
+    document.getElementById("turnsLeft").innerHTML = `Turns Left: ${turnsLeft}`;
     console.log(initialObject.tries);
   }
 

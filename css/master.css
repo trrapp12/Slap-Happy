@@ -53,8 +53,8 @@ body {
 }
 
 div > input[type=text] {
-  margin-top: 3em;
-  width: 100%;
+  margin-top: 2em;
+      width: 100%;
 }
 
 .high-em-margin {
