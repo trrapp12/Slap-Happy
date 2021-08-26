@@ -6,7 +6,8 @@ var initialObject = {
   maxtries: 10,
   tries: 0,
   guessDisplayButton: [],
-  word: arrWords.randomElement()
+  word: arrWords.randomElement(),
+  turnsLeft: 10;
 };
 
 function reset() {
@@ -14,7 +15,8 @@ function reset() {
   initialObject.maxtries = 10;
   initialObject.tries = 0;
   initialObject.guessDisplayButton = [];
-  initialObject.word = arrWords.randomElement()
+  initialObject.word = arrWords.randomElement(),
+  initialObject.turnsLeft = 10;
   console.log(initialObject);
 }
 
@@ -45,7 +47,8 @@ function displayWord (text) {
 
 
 function win () {
-      var audio2 = new Audio('media/ES_Happy_Birthday_33_SFX_Producer.mp3');
+
+  var audio2 = new Audio('media/ES_Happy_Birthday_33_SFX_Producer.mp3');
   initialObject.answerArr = initialObject.word.split("")
 
   for (var i = 0; i < initialObject.answerArr.length; ++i) {
@@ -54,7 +57,6 @@ function win () {
   //  document.getElementById("deathmessage").innerHTML= "You won the game";
   displayMessage("Happy Birthday!!! You're the winner!!!");
   audio2.play();
-
    reset();
 };
 
@@ -125,6 +127,7 @@ function depricateTries () {
 
   if (initialObject.tries < initialObject.maxtries) {
     initialObject.tries += 1;
+    initialObject.turnsLeft -= 1;
     console.log(initialObject.tries);
   }
 

@@ -28,7 +28,6 @@ body {
 }
 
 .padding {
-  width: 100%;
   height: auto;
   padding-top: 20px;
 }
@@ -51,25 +50,30 @@ body {
   border: 1px solid gray;
   padding: 1.5em;
   margin-top: .5em;
-  position: absolute;
+}
+
+div > input[type=text] {
+  margin-top: 3em;
+}
+
+.high-em-margin {
+  margin-top: 3em;
 }
 /*****************  Video CSS  **************************/
 
 
 video#bgvid {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100vw;
-    min-height: 100vh;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background-size: cover;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100vh;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background-size: cover;
 }
 
 
@@ -100,11 +104,10 @@ video#bgvid {
 }
 
 .middle-column {
-      float: right;
-      position: relative;
-      left: -12em;
-      top: 5em;
-      break-after:
+  float: right;
+  position: relative;
+  top: 5em;
+  width: 50%;
 }
 
 .container-partition {
@@ -113,7 +116,6 @@ video#bgvid {
   width: 100%;
   height: 80vh;
   margin-top: 200px;
-  margin-right: 70%;
   line-height: 200%;
   position: absolute;
   background-color: white;
@@ -128,7 +130,6 @@ video#bgvid {
   background-color: transparent;
   color: white;
   text-align: left;
-  margin-left: 10%;
   margin-right: 0%;
   width: 90%;
   position: relative;
@@ -306,10 +307,10 @@ a {
   background-color: rgb(219, 209, 209);
   color: white;
   cursor: pointer;
-  display: inline-flex;
   border: 1px solid gray;
   padding: 8px 10px 10px 10px;
-
+  border-radius: 6px;
+  margin-top: .5em;
 }
 
 .btn:hover {
@@ -353,16 +354,17 @@ a {
 /****************Input CSS***************************/
 
 input[type=text] {
-    padding: 1px 1px 1px 10px;
-    margin: 0;
-    box-sizing: border-box;
-    border: 1px solid gray;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    outline: none;
-    color: white;
-    line-height: 35px;
-    width: 10em;
+  padding: 1px 1px 1px 10px;
+  margin: 0;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  color: white;
+  line-height: 35px;
+  width: 10em;
+  background-color: white;
 }
 
 input[type=text]:focus {
