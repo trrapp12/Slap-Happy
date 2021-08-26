@@ -25,7 +25,17 @@ function reset() {
 
 console.log(initialObject.word);
 
-function test () {return document.getElementById("input1").value.toLowerCase()};
+function test () {
+  var letterRE = /^[A-Za-z]{1}/;
+  var input = document.getElementById("input1").value.toLowerCase();
+  console.log("letterRE is: " + letterRE + ". And input is: " + input);
+  if (input.match(letterRE) && !input.length > 1) {
+    return input
+  } else {
+    alert("You Rascal!  You either tried to enter more than one letter, or tried to enter a non-letter character. You won't get away with this!")
+  }
+
+};
 
 function displayMessage (message) {
     var loseWindow = document.getElementById("guessDisplayII");
