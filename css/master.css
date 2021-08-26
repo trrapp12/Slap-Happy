@@ -54,6 +54,7 @@ body {
 
 div > input[type=text] {
   margin-top: 3em;
+  width: 100%;
 }
 
 .high-em-margin {
@@ -301,7 +302,7 @@ a {
 
 .btn {
   font-family: 'Poiret One', cursive;
-  width: 100%;
+  width: 9rem;
   font-size: .8em;
   text-decoration: none;
   background-color: rgb(219, 209, 209);

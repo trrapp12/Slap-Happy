@@ -1,3 +1,5 @@
+console.log("connected to scripts.js")
+
 Array.prototype.randomElement = function () {
     return this[Math.floor(Math.random() * this.length)]
 };
@@ -7,7 +9,7 @@ var initialObject = {
   tries: 0,
   guessDisplayButton: [],
   word: arrWords.randomElement(),
-  turnsLeft: 10;
+  turnsLeft: 10
 };
 
 function reset() {
@@ -16,7 +18,7 @@ function reset() {
   initialObject.tries = 0;
   initialObject.guessDisplayButton = [];
   initialObject.word = arrWords.randomElement(),
-  initialObject.turnsLeft = 10;
+  initialObject.turnsLeft = 10
   console.log(initialObject);
 }
 
