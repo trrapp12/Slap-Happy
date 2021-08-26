@@ -5,7 +5,7 @@ Array.prototype.randomElement = function () {
 };
 
 var initialObject = {
-  maxtries: 10,
+  maxtries: 9,
   tries: 0,
   guessDisplayButton: [],
   word: arrWords.randomElement(),
@@ -14,7 +14,7 @@ var initialObject = {
 
 function reset() {
 
-  initialObject.maxtries = 10;
+  initialObject.maxtries = 9;
   initialObject.tries = 0;
   initialObject.guessDisplayButton = [];
   initialObject.word = arrWords.randomElement(),
