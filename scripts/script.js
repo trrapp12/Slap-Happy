@@ -7,12 +7,11 @@ var initialObject = {
   tries: 0,
   guessDisplayButton: [],
   word: arrWords.randomElement()
-
 };
 
 function reset() {
 
-  var audio2 = new Audio('media/317406__otterbahn__flannel-lumberjack.wav');
+  var audio2 = new Audio('media/ES_Happy_Birthday_33_SFX_Producer.mp3');
 
   initialObject.maxtries = 10;
   initialObject.tries = 0;
@@ -21,7 +20,7 @@ function reset() {
 
   audio2.play()
 
-  document.getElementById("guessDisplay").innerHTML = "What are you?  A lumber Jack? (that means you won...)"
+  document.getElementById("guessDisplay").innerHTML = "You Won!!! Happy Birthday!"
 
   console.log(initialObject);
 }
@@ -31,6 +30,16 @@ console.log(initialObject.word);
 
 function test () {return document.getElementById("input1").value.toLowerCase()};
 
+function loseMessage () {
+    var loseWindow = document.getElementById("guessDisplayII");
+    if (loseWindow.style.visibility === "visible") {
+      loseWindow.style.visibility = "hidden";
+    } else {
+      loseWindow.style.visibility = "visible";
+      loseWindow.innerHTML = "You are out of tries!!!  You lose!"
+      setTimeout(() => loseWindow.style.visibility = "hidden", 2500);
+    }
+}
 
 function split () {
   return this.word.split("")
@@ -124,7 +133,7 @@ function depricateTries () {
   }
 
   else { audio.play();
-  document.getElementById("deathmessage").innerHTML = "Your number of tries has expired"
+    loseMessage();
   return
   };
 };

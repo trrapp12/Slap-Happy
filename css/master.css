@@ -282,6 +282,15 @@ video#bgvid {
   padding: 2.5em;
   border: 1px solid gray;
 }
+
+.guessDisplayII {
+  background-color: rgb(219, 209, 209);
+  min-height: 5vh;
+  margin-top: .5em;
+  visibility: hidden;
+  color: white;
+  padding-left: .5em;
+}
 /******************   Button   ************************/
 
 a {
