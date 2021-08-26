@@ -116,6 +116,8 @@ function compareGuess () {
 
 
 function myFunction() {
+    var submitAudio = new Audio('media/ES_Beep_30_SFX_Producer.mp3')
+    submitAudio.play();
     let guessLetterButton =  test();
     // let guessDisplayButton = [];
     let text = "";
