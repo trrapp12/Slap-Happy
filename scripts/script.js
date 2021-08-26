@@ -29,7 +29,7 @@ function reset() {
 // consoles the word selected for easier testing
 console.log(initialObject.word);
 
-
+// function tests the input to make sure only letter characters are getting submitted, and only one at a time
 function test () {
   var letterRE = /[A-Za-z]/
   var input = document.getElementById("input1").value.toLowerCase();
@@ -42,6 +42,7 @@ function test () {
 
 };
 
+// reusable function which creates a message to display (i.e if you win/lose)
 function displayMessage (message) {
     var loseWindow = document.getElementById("guessDisplayII");
     if (loseWindow.style.visibility === "visible") {
@@ -53,16 +54,17 @@ function displayMessage (message) {
     }
 }
 
+// function splits words on ""
 function split () {
   return this.word.split("")
 };
 
-
+// function diplays the word
 function displayWord (text) {
   document.getElementById("display").innerHTML= text;
 };
 
-
+// function holds logic to determine if the game is won or not
 function win () {
 
   var audio2 = new Audio('media/ES_Happy_Birthday_33_SFX_Producer.mp3');
@@ -77,7 +79,7 @@ function win () {
    reset();
 };
 
-
+// function controls counting of the characters
 function countCharacters () {
     initialObject.guessDisplayArr = [];
 
@@ -92,7 +94,7 @@ function countCharacters () {
     document.getElementById("guessDisplay").innerHTML = initialObject.guessDisplayArr.join("");
 };
 
-
+// function puts the guessed character in the correct place in the partially displayed word
 function exchangeValues (guess) {
   i = initialObject.answerArr.indexOf(guess);
 
@@ -107,7 +109,7 @@ function exchangeValues (guess) {
  document.getElementById("guessDisplay").innerHTML = initialObject.guessDisplayArr.join("");
 };
 
-
+// function compares if guess is correct or not
 function compareGuess () {
 
   let guess = test();
@@ -119,7 +121,7 @@ function compareGuess () {
 
 };
 
-
+// funciton called on the submit button
 function myFunction() {
     var submitAudio = new Audio('media/ES_Beep_30_SFX_Producer.mp3')
     submitAudio.play();
@@ -139,7 +141,7 @@ function myFunction() {
     win();
 };
 
-
+// function works as counter to depricate tries
 function depricateTries () {
 
   var audio = new Audio('media/233579__roivasugo__boo-you-suck.wav');
@@ -158,6 +160,7 @@ function depricateTries () {
   };
 };
 
+// window onload 
 window.onload = function () {
 
   countCharacters ();
