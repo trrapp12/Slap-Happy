@@ -30,13 +30,13 @@ console.log(initialObject.word);
 
 function test () {return document.getElementById("input1").value.toLowerCase()};
 
-function loseMessage () {
+function displayMessage (message) {
     var loseWindow = document.getElementById("guessDisplayII");
     if (loseWindow.style.visibility === "visible") {
       loseWindow.style.visibility = "hidden";
     } else {
       loseWindow.style.visibility = "visible";
-      loseWindow.innerHTML = "You are out of tries!!!  You lose!"
+      loseWindow.innerHTML = message;
       setTimeout(() => loseWindow.style.visibility = "hidden", 2500);
     }
 }
@@ -133,7 +133,7 @@ function depricateTries () {
   }
 
   else { audio.play();
-    loseMessage();
+    displayMessage("You done ran out of turns!!! You lose!!!");
   return
   };
 };
