@@ -51,6 +51,7 @@ body {
   border: 1px solid gray;
   padding: 1.5em;
   margin-top: .5em;
+  position: absolute;
 }
 /*****************  Video CSS  **************************/
 

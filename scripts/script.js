@@ -124,7 +124,7 @@ function depricateTries () {
   }
 
   else { audio.play();
-  document.getElementById("deathmessage").innerHTML= "Your number of tries has expired"
+  document.getElementById("deathmessage").innerHTML = "Your number of tries has expired"
   return
   };
 };
