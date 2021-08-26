@@ -1,9 +1,12 @@
+// confirms js file is connected
 console.log("connected to scripts.js")
 
+// pulls a random word from the words.js file
 Array.prototype.randomElement = function () {
     return this[Math.floor(Math.random() * this.length)]
 };
 
+// initializes an object which will hold the numbers of tries, tries left, max number of tries, word, and letters guessed
 var initialObject = {
   maxtries: 9,
   tries: 0,
@@ -12,6 +15,7 @@ var initialObject = {
   turnsLeft: 10
 };
 
+// this function will reset the object (i.e. if the game is won)
 function reset() {
 
   initialObject.maxtries = 9;
@@ -22,8 +26,9 @@ function reset() {
   console.log(initialObject);
 }
 
-
+// consoles the word selected for easier testing
 console.log(initialObject.word);
+
 
 function test () {
   var letterRE = /[A-Za-z]/
