@@ -28,6 +28,16 @@ function reset() {
 // consoles the word selected for easier testing
 console.log(initialObject.word);
 
+function doubleGuessValidation (guess) {
+  var input = document.getElementById("input1").value.toLowerCase();
+  if (initialObject.guessDisplayButton.includes(input)) {
+    alert("you already guessed that letter!");
+    return false;
+  } else {
+    console.log("line 35: doubleGuessValidation() fired successfully")
+    return true;
+  }
+}
 // function tests the input to make sure only letter characters are getting submitted, and only one at a time
 function test () {
   var letterRE = /[A-Za-z]/;
@@ -124,20 +134,26 @@ function compareGuess () {
 function myFunction() {
     var submitAudio = new Audio('media/ES_Button_Push_4_SFX_Producer.mp3');
     submitAudio.play();
-    let guessLetterButton =  test();
-    // let guessDisplayButton = [];
-    let text = "";
+    var check = doubleGuessValidation();
+    if (check === false) {
+      return;
+    } else {
+      let guessLetterButton =  test();
+      // let guessDisplayButton = [];
+      let text = "";
 
-    for (i = 0; i < guessLetterButton.length ;i++) {
-        initialObject.guessDisplayButton.push(guessLetterButton);
-        console.log(initialObject.guessDisplayButton);
+      for (i = 0; i < guessLetterButton.length ;i++) {
+          initialObject.guessDisplayButton.push(guessLetterButton);
+          console.log(initialObject.guessDisplayButton);
 
-        document.getElementById("demo").innerHTML = initialObject.guessDisplayButton;
+          document.getElementById("demo").innerHTML = initialObject.guessDisplayButton;
 
+      }
+      compareGuess();
+
+      win();
     }
-    compareGuess();
 
-    win();
 }
 
 // function works as counter to depricate tries
