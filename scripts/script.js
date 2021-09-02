@@ -16,13 +16,13 @@ var initialObject = {
 
 // this function will reset the object (i.e. if the game is won)
 function reset() {
-
+  console.log("line 19: function reset() started firing")
   initialObject.maxtries = 9;
   initialObject.tries = 0;
   initialObject.guessDisplayButton = [];
   initialObject.word = arrWords.randomElement();
   initialObject.turnsLeft = 10;
-  console.log(initialObject);
+  console.log("line 25: function reset() completed firing" + initialObject);
 }
 
 // consoles the word selected for easier testing
@@ -80,7 +80,8 @@ function win () {
   //  document.getElementById("deathmessage").innerHTML= "You won the game";
   displayMessage("Happy Birthday!!! You're the winner!!!");
   audio2.play();
-   reset();
+// setTimeout(() => loseWindow.style.visibility = "hidden", 2500)
+   setTimeout(reset(), 2500);
 }
 
 // function controls counting of the characters
@@ -138,6 +139,7 @@ function myFunction() {
       let text = "";
 
       for (i = 0; i < guessLetterButton.length ;i++) {
+        // guessDisplayButton is an array that olds old guesses so we can compare them with test() input to validate against double guesses
           initialObject.guessDisplayButton.push(guessLetterButton);
           console.log(initialObject.guessDisplayButton);
 
@@ -172,5 +174,7 @@ function depricateTries () {
 
 // window onload
 window.onload = function () {
+
   countCharacters ();
+
 };
