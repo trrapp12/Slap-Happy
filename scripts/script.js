@@ -68,11 +68,6 @@ function split () {
   return this.word.split("");
 }
 
-// function diplays the word
-function displayWord (text) {
-  document.getElementById("display").innerHTML= text;
-}
-
 // function holds logic to determine if the game is won or not
 function win () {
 
@@ -177,7 +172,5 @@ function depricateTries () {
 
 // window onload
 window.onload = function () {
-
   countCharacters ();
-  displayWord();
 };
