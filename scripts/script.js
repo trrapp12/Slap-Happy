@@ -22,7 +22,7 @@ function reset() {
   initialObject.guessDisplayButton = [];
   initialObject.word = arrWords.randomElement();
   initialObject.turnsLeft = 10;
-  console.log("line 25: function reset() completed firing" + initialObject);
+  console.log("line 25: function reset() completed firing" + JSON.stringify(initialObject));
 }
 
 // consoles the word selected for easier testing
@@ -158,7 +158,7 @@ function depricateTries () {
 
   var audio = new Audio('media/233579__roivasugo__boo-you-suck.wav');
 
-  if (initialObject.tries < initialObject.maxtries) {
+  if (initialObject.tries <= initialObject.maxtries) {
     initialObject.tries += 1;
     initialObject.turnsLeft -= 1;
     var turnsLeft = initialObject.turnsLeft;
@@ -166,8 +166,10 @@ function depricateTries () {
     console.log(initialObject.tries);
   }
 
-  else { audio.play();
+  else {
+    audio.play();
     displayMessage("You done ran out of turns!!! You lose!!!");
+    setTimeout(reset(), 2500);
   return;
   }
 }
