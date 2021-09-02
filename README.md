@@ -43,7 +43,7 @@
 
 ---
 
-[Hangman](https://trrapp12-ironyard.github.io/hangman/)
+[Slap-Happy](https://trrapp12.github.io/Slap-Happy/)
 <br/>
 <br/>
 ### More Information:
