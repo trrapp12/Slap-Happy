@@ -1,9 +1,8 @@
-// confirms js file is connected
-console.log("connected to scripts.js")
+console.log("connected to scripts.js");
 
 // pulls a random word from the words.js file
 Array.prototype.randomElement = function () {
-    return this[Math.floor(Math.random() * this.length)]
+    return this[Math.floor(Math.random() * this.length)];
 };
 
 // initializes an object which will hold the numbers of tries, tries left, max number of tries, word, and letters guessed
@@ -21,8 +20,8 @@ function reset() {
   initialObject.maxtries = 9;
   initialObject.tries = 0;
   initialObject.guessDisplayButton = [];
-  initialObject.word = arrWords.randomElement(),
-  initialObject.turnsLeft = 10
+  initialObject.word = arrWords.randomElement();
+  initialObject.turnsLeft = 10;
   console.log(initialObject);
 }
 
@@ -31,16 +30,16 @@ console.log(initialObject.word);
 
 // function tests the input to make sure only letter characters are getting submitted, and only one at a time
 function test () {
-  var letterRE = /[A-Za-z]/
+  var letterRE = /[A-Za-z]/;
   var input = document.getElementById("input1").value.toLowerCase();
   // console.log("letterRE is: " + letterRE + ". And input is: " + input);
   if (input.match(letterRE) && input.length < 2) {
-    return input
+    return input;
   } else {
-    alert("You Rascal! You either tried to guess more than one letter at once, or you tried to guess something that wasn't a letter. You won't get away with this!")
+    alert("You Rascal! You either tried to guess more than one letter at once, or you tried to guess something that wasn't a letter. You won't get away with this!");
   }
 
-};
+}
 
 // reusable function which creates a message to display (i.e if you win/lose)
 function displayMessage (message) {
@@ -56,19 +55,19 @@ function displayMessage (message) {
 
 // function splits words on ""
 function split () {
-  return this.word.split("")
-};
+  return this.word.split("");
+}
 
 // function diplays the word
 function displayWord (text) {
   document.getElementById("display").innerHTML= text;
-};
+}
 
 // function holds logic to determine if the game is won or not
 function win () {
 
   var audio2 = new Audio('media/ES_Happy_Birthday_33_SFX_Producer.mp3');
-  initialObject.answerArr = initialObject.word.split("")
+  initialObject.answerArr = initialObject.word.split("");
 
   for (var i = 0; i < initialObject.answerArr.length; ++i) {
      if (initialObject.answerArr[i] !== initialObject.guessDisplayArr[i]) return true;
@@ -77,22 +76,22 @@ function win () {
   displayMessage("Happy Birthday!!! You're the winner!!!");
   audio2.play();
    reset();
-};
+}
 
 // function controls counting of the characters
 function countCharacters () {
     initialObject.guessDisplayArr = [];
 
-    initialObject.answerArr = initialObject.word.split("")
+    initialObject.answerArr = initialObject.word.split("");
     console.log(initialObject.answerArr);
 
 
     for (let i = 0; i < initialObject.answerArr.length; i++ ) {
       initialObject.guessDisplayArr.push(" _ ");
       console.log(initialObject.guessDisplayArr);
-    };
+    }
     document.getElementById("guessDisplay").innerHTML = initialObject.guessDisplayArr.join("");
-};
+}
 
 // function puts the guessed character in the correct place in the partially displayed word
 function exchangeValues (guess) {
@@ -104,10 +103,10 @@ function exchangeValues (guess) {
     console.log(initialObject.guessDisplayArr);
     i = initialObject.answerArr.indexOf(guess, i+1);
 
- };
+ }
 
  document.getElementById("guessDisplay").innerHTML = initialObject.guessDisplayArr.join("");
-};
+}
 
 // function compares if guess is correct or not
 function compareGuess () {
@@ -119,11 +118,11 @@ function compareGuess () {
 
    depricateTries();
 
-};
+}
 
 // funciton called on the submit button
 function myFunction() {
-    var submitAudio = new Audio('media/ES_Beep_30_SFX_Producer.mp3')
+    var submitAudio = new Audio('media/ES_Beep_30_SFX_Producer.mp3');
     submitAudio.play();
     let guessLetterButton =  test();
     // let guessDisplayButton = [];
@@ -135,11 +134,11 @@ function myFunction() {
 
         document.getElementById("demo").innerHTML = initialObject.guessDisplayButton;
 
-    };
+    }
     compareGuess();
 
     win();
-};
+}
 
 // function works as counter to depricate tries
 function depricateTries () {
@@ -156,11 +155,11 @@ function depricateTries () {
 
   else { audio.play();
     displayMessage("You done ran out of turns!!! You lose!!!");
-  return
-  };
-};
+  return;
+  }
+}
 
-// window onload 
+// window onload
 window.onload = function () {
 
   countCharacters ();
