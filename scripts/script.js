@@ -17,33 +17,33 @@ var initialObject = {
 
 // this function will reset the object (i.e. if the game is won)
 function reset() {
-  console.log("line 19: function reset() started firing")
+  console.log("line 19: reset() started firing");
   initialObject.maxtries = 9;
   initialObject.tries = 0;
   initialObject.guessDisplayButton = [];
   initialObject.word = arrWords.randomElement();
   initialObject.turnsLeft = 10;
   initialObject.win = false;
-  console.log("line 25: function reset() completed firing" + JSON.stringify(initialObject));
+  console.log("line 25: reset() completed firing" + JSON.stringify(initialObject));
 }
 
 // consoles the word selected for easier testing
 console.log(initialObject.word);
 
 function doubleGuessValidation (guess) {
-  console.log("line 34: doubleGuessValidation() function firing")
+  console.log("line 34: doubleGuessValidation() firing");
   var input = document.getElementById("input1").value.toLowerCase();
   if (initialObject.guessDisplayButton.includes(input)) {
     alert("you already guessed that letter!");
     return false;
   } else {
-    console.log("line 35: doubleGuessValidation() fired successfully")
+    console.log("line 35: doubleGuessValidation() fired successfully");
     return true;
   }
 }
 // function tests the input to make sure only letter characters are getting submitted, and only one at a time
 function test () {
-  console.log("line 46: test() firing")
+  console.log("line 46: test() firing");
   var letterRE = /[A-Za-z]/;
   var input = document.getElementById("input1").value.toLowerCase();
   // console.log("letterRE is: " + letterRE + ". And input is: " + input);
@@ -57,7 +57,7 @@ function test () {
 
 // reusable function which creates a message to display (i.e if you win/lose)
 function displayMessage (message) {
-  console.log("line 60: displayMessage() firing")
+  console.log("line 60: displayMessage() firing");
     var loseWindow = document.getElementById("guessDisplayII");
     if (loseWindow.style.visibility === "visible") {
       loseWindow.style.visibility = "hidden";
@@ -70,14 +70,14 @@ function displayMessage (message) {
 
 // function splits words on ""
 function split () {
-  console.log("line 73: split() firing")
+  console.log("line 73: split() firing");
   return this.word.split("");
 }
 
 // function holds logic to determine if the game is won or not
 function win () {
 // does not decide if you win, preforms actions of winning
-  console.log("line 76: function win() firing")
+  console.log("line 76: function win() firing");
   var audio2 = new Audio('media/ES_Happy_Birthday_33_SFX_Producer.mp3');
   initialObject.answerArr = initialObject.word.split("");
 
@@ -93,7 +93,7 @@ function win () {
 
 // function controls counting of the characters
 function countCharacters () {
-  console.log("line 95: countCharacters() firing")
+  console.log("line 95: countCharacters() firing");
     initialObject.guessDisplayArr = [];
 
     initialObject.answerArr = initialObject.word.split("");
@@ -109,7 +109,7 @@ function countCharacters () {
 
 // function puts the guessed character in the correct place in the partially displayed word
 function exchangeValues (guess) {
-  console.log("line 112: exchangeValues() firing")
+  console.log("line 112: exchangeValues() firing");
   i = initialObject.answerArr.indexOf(guess);
 
   while (i >= 0) {
@@ -125,7 +125,7 @@ function exchangeValues (guess) {
 
 // function compares if guess is correct or not
 function compareGuess () {
-  console.log("line 128: compares() firing")
+  console.log("line 128: compares() firing");
   let guess = test();
   console.log(guess);
 
@@ -137,7 +137,7 @@ function compareGuess () {
 
 // funciton called on the submit button
 function myFunction() {
-  console.log("line 140: myFunction() firing")
+  console.log("line 140: myFunction() firing");
     var submitAudio = new Audio('media/ES_Button_Push_4_SFX_Producer.mp3');
     submitAudio.play();
     var check = doubleGuessValidation();
@@ -165,7 +165,7 @@ function myFunction() {
 
 // function works as counter to depricate tries
 function depricateTries () {
-  console.log("line 160: function depricatesTries() firing")
+  console.log("line 160: depricatesTries() firing");
   var audio = new Audio('media/233579__roivasugo__boo-you-suck.wav');
   var checkWin = win();
   if (initialObject.tries <= initialObject.maxtries) {
@@ -178,7 +178,7 @@ function depricateTries () {
   }
 
   else if ((initialObject.tries === initialObject.maxtries) && checkWin !== true) {
-    console.log("line 173: depricatesTries() else-if statement entered")
+    console.log("line 173: depricatesTries() else-if statement entered");
     audio.play();
     displayMessage("You done ran out of turns!!! You lose!!!");
     setTimeout(reset(), 2500);
