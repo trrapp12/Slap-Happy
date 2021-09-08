@@ -284,7 +284,7 @@ video#bgvid {
   border: 1px solid gray;
 }
 
-.guessDisplayII {
+.winLoseMessageDisplay {
   background-color: rgb(219, 209, 209);
   min-height: 5vh;
   margin-top: .5em;
@@ -307,7 +307,7 @@ video#bgvid {
 .rules > h3 {
   width: 50%;
   margin: auto;
-  margin-bottom: 1em; 
+  margin-bottom: 1em;
 }
 
 .rules > p {

@@ -58,7 +58,7 @@ function test () {
 // reusable function which creates a message to display (i.e if you win/lose)
 function displayMessage (message) {
   console.log("line 60: displayMessage() firing");
-    var loseWindow = document.getElementById("guessDisplayII");
+    var loseWindow = document.getElementById("winLoseMessageDisplay");
     if (loseWindow.style.visibility === "visible") {
       loseWindow.style.visibility = "hidden";
     } else {
@@ -77,7 +77,7 @@ function split () {
 // function holds logic to determine if the game is won or not
 function win () {
 // does not decide if you win, preforms actions of winning
-  console.log("line 76: function win() firing");
+  console.log("line 80: function win() firing");
   var audio2 = new Audio('media/ES_Happy_Birthday_33_SFX_Producer.mp3');
   initialObject.answerArr = initialObject.word.split("");
 
