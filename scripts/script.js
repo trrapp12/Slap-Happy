@@ -24,7 +24,17 @@ function reset() {
   initialObject.word = arrWords.randomElement();
   initialObject.turnsLeft = 10;
   initialObject.win = false;
+
+  var turnsLeft = initialObject.turnsLeft;
   console.log("line 25: reset() completed firing" + JSON.stringify(initialObject));
+  // reset display to blank
+  document.getElementById("guessDisplay").innerHTML = "";
+  // reset Letters guessed
+  document.getElementById("demo").innerHTML = "";
+  // restart the game
+  document.getElementById("turnsLeft").innerHTML = `Turns Left: ${turnsLeft}`
+  countCharacters ();
+
 }
 
 // consoles the word selected for easier testing
@@ -88,7 +98,7 @@ function win () {
   displayMessage("Happy Birthday!!! You're the winner!!!");
   audio2.play();
 // setTimeout(() => loseWindow.style.visibility = "hidden", 2500)
-   setTimeout(reset(), 2500);
+   setTimeout(reset, 2500);
 }
 
 // function controls counting of the characters
@@ -181,7 +191,7 @@ function depricateTries () {
     console.log("line 173: depricatesTries() else-if statement entered");
     audio.play();
     displayMessage("You done ran out of turns!!! You lose!!!");
-    setTimeout(reset(), 2500);
+    setTimeout(reset, 2500);
   return;
   }
 }
