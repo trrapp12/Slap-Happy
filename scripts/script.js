@@ -17,24 +17,26 @@ var initialObject = {
 
 // this function will reset the object (i.e. if the game is won)
 function reset() {
-  console.log("line 19: reset() started firing");
-  initialObject.maxtries = 9;
-  initialObject.tries = 0;
-  initialObject.guessDisplayButton = [];
-  initialObject.word = arrWords.randomElement();
-  initialObject.turnsLeft = 10;
-  initialObject.win = false;
-
-  var turnsLeft = initialObject.turnsLeft;
-  console.log("line 25: reset() completed firing" + JSON.stringify(initialObject));
-  // reset display to blank
-  document.getElementById("guessDisplay").innerHTML = "";
-  // reset Letters guessed
-  document.getElementById("demo").innerHTML = "";
-  // restart the game
-  document.getElementById("turnsLeft").innerHTML = `Turns Left: ${turnsLeft}`
-  countCharacters ();
-
+// console.log place in code
+    console.log("line 19: reset() started firing");
+    // reinitialize values for initialObject
+    initialObject.maxtries = 9;
+    initialObject.tries = 0;
+    initialObject.guessDisplayButton = [];
+    initialObject.word = arrWords.randomElement();
+    initialObject.turnsLeft = 10;
+    initialObject.win = false;
+    // check object key values
+    console.log("line 25: reset() completed firing" + JSON.stringify(initialObject));
+    // reset display to blank
+    document.getElementById("guessDisplay").innerHTML = "";
+    // reset Letters guessed
+    document.getElementById("demo").innerHTML = "";
+    // reset the turns left
+    var turnsLeft = initialObject.turnsLeft;
+    document.getElementById("turnsLeft").innerHTML = `Turns Left: ${turnsLeft}`;
+      // restart the game
+    countCharacters ();
 }
 
 // consoles the word selected for easier testing
@@ -74,7 +76,8 @@ function displayMessage (message) {
     } else {
       loseWindow.style.visibility = "visible";
       loseWindow.innerHTML = message;
-      setTimeout(() => loseWindow.style.visibility = "hidden", 2500);
+      setTimeout(() => {loseWindow.style.visibility = "hidden"}, 2500);
+
     }
 }
 
@@ -87,6 +90,10 @@ function split () {
 // function holds logic to determine if the game is won or not
 function win () {
 // does not decide if you win, preforms actions of winning
+  function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms))
+  };
+
   console.log("line 80: function win() firing");
   var audio2 = new Audio('media/ES_Happy_Birthday_33_SFX_Producer.mp3');
   initialObject.answerArr = initialObject.word.split("");
@@ -95,10 +102,15 @@ function win () {
      if (initialObject.answerArr[i] !== initialObject.guessDisplayArr[i]) return true;
    }
   //  document.getElementById("deathmessage").innerHTML= "You won the game";
-  displayMessage("Happy Birthday!!! You're the winner!!!");
   audio2.play();
-// setTimeout(() => loseWindow.style.visibility = "hidden", 2500)
-   setTimeout(reset, 2500);
+  displayMessage("Happy Birthday!!! You're the winner!!!");
+  delay(2580).then(() => {reset()});
+//   function delay(ms) {
+//   return new Promise(resolve => setTimeout(resolve, ms));
+// }
+//
+// delay(3000).then(() => alert('runs after 3 seconds'));
+
 }
 
 // function controls counting of the characters
@@ -202,3 +214,15 @@ window.onload = function () {
   countCharacters ();
 
 };
+
+// (function () {
+//   function change() {
+//     return new Promise (function(resolve, reject) {
+//       setTimeout(resolve, 2000);
+//     }).then(function() {
+//       console.log("wrapped settimeout after 2000ms")
+//     })
+//   }
+//
+//   change()
+// })
