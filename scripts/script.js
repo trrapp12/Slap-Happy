@@ -109,12 +109,6 @@ function win () {
   audio2.play();
   displayMessage("Happy Birthday!!! You're the winner!!!");
   delay(2500).then(() => { reset() });
-//   function delay(ms) {
-//   return new Promise(resolve => setTimeout(resolve, ms));
-// }
-//
-// delay(3000).then(() => alert('runs after 3 seconds'));
-
 }
 
 // function controls counting of the characters
@@ -164,9 +158,11 @@ function compareGuess () {
 // funciton called on the submit button
 function myFunction() {
   console.log("line 140: myFunction() firing");
+  var check = doubleGuessValidation();
 
     submitAudio.play();
-    var check = doubleGuessValidation();
+
+
     if (check === false) {
       return;
     } else {
@@ -174,16 +170,14 @@ function myFunction() {
       // let guessDisplayButton = [];
       let text = "";
 
-      for (i = 0; i < guessLetterButton.length ;i++) {
+      for (i = 0; i < guessLetterButton.length; i++) {
         // guessDisplayButton is an array that olds old guesses so we can compare them with test() input to validate against double guesses
           initialObject.guessDisplayButton.push(guessLetterButton);
-          console.log(initialObject.guessDisplayButton);
-
+          console.log("line 176: initialObject.guessLetterButton in myFunction is: " + initialObject.guessDisplayButton);
           document.getElementById("demo").innerHTML = initialObject.guessDisplayButton;
-
       }
-      compareGuess();
 
+      compareGuess();
       win();
     }
 
@@ -193,8 +187,8 @@ function myFunction() {
 function depricateTries () {
   console.log("line 160: depricatesTries() firing");
 
-  var checkWin = win();
-  if (initialObject.tries <= initialObject.maxtries) {
+  // var checkWin = win();
+  if (initialObject.tries < initialObject.maxtries) {
     // if our attempts haven't exceeded the max tries, ...
     initialObject.tries += 1;
     initialObject.turnsLeft -= 1;
@@ -203,7 +197,7 @@ function depricateTries () {
     console.log(initialObject.tries);
   }
 
-  else if ((initialObject.tries === initialObject.maxtries) && checkWin !== true) {
+  else if (initialObject.tries === initialObject.maxtries) {
     console.log("line 173: depricatesTries() else-if statement entered");
     audio.play();
     displayMessage("You done ran out of turns!!! You lose!!!");
@@ -218,3 +212,5 @@ window.onload = function () {
   countCharacters ();
 
 };
+
+window
