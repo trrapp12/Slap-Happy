@@ -5,7 +5,15 @@ Array.prototype.randomElement = function () {
     return this[Math.floor(Math.random() * this.length)];
 };
 
+// creates all sounds to be played
+const audio = new Audio('media/233579__roivasugo__boo-you-suck.wav');
+const audio2 = new Audio('media/ES_Happy_Birthday_33_SFX_Producer.mp3');
+const submitAudio = new Audio('media/ES_Button_Push_4_SFX_Producer.mp3');
+
+// sets display area for messages
+const loseWindow = document.getElementById("winLoseMessageDisplay");
 // initializes an object which will hold the numbers of tries, tries left, max number of tries, word, and letters guessed
+
 var initialObject = {
   maxtries: 9,
   tries: 0,
@@ -15,21 +23,13 @@ var initialObject = {
   win: false
 };
 
-// creates all sounds to be played
-const audio = new Audio('media/233579__roivasugo__boo-you-suck.wav');
-const audio2 = new Audio('media/ES_Happy_Birthday_33_SFX_Producer.mp3');
-const submitAudio = new Audio('media/ES_Button_Push_4_SFX_Producer.mp3');
-
-// sets display area for messages
-const loseWindow = document.getElementById("winLoseMessageDisplay");
-
 function delay(ms) {
   console.log("line 19: entering delay()")
   return new Promise(resolve => setTimeout(resolve, ms))
 };
 
 // this function will reset the object (i.e. if the game is won)
-function reset() {
+function reset () {
 // console.log place in code
     console.log("line 19: reset() started firing");
     // reinitialize values for initialObject
@@ -108,7 +108,7 @@ function win () {
   //  document.getElementById("deathmessage").innerHTML= "You won the game";
   audio2.play();
   displayMessage("Happy Birthday!!! You're the winner!!!");
-  delay(2500).then(() => {reset()});
+  delay(2500).then(() => { reset() });
 //   function delay(ms) {
 //   return new Promise(resolve => setTimeout(resolve, ms));
 // }
@@ -218,15 +218,3 @@ window.onload = function () {
   countCharacters ();
 
 };
-
-// (function () {
-//   function change() {
-//     return new Promise (function(resolve, reject) {
-//       setTimeout(resolve, 2000);
-//     }).then(function() {
-//       console.log("wrapped settimeout after 2000ms")
-//     })
-//   }
-//
-//   change()
-// })
