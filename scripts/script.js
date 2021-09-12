@@ -15,6 +15,11 @@ var initialObject = {
   win: false
 };
 
+function delay(ms) {
+  console.log("line 19: entering delay()")
+  return new Promise(resolve => setTimeout(resolve, ms))
+};
+
 // this function will reset the object (i.e. if the game is won)
 function reset() {
 // console.log place in code
@@ -90,10 +95,6 @@ function split () {
 // function holds logic to determine if the game is won or not
 function win () {
 // does not decide if you win, preforms actions of winning
-  function delay(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms))
-  };
-
   console.log("line 80: function win() firing");
   var audio2 = new Audio('media/ES_Happy_Birthday_33_SFX_Producer.mp3');
   initialObject.answerArr = initialObject.word.split("");
@@ -104,7 +105,7 @@ function win () {
   //  document.getElementById("deathmessage").innerHTML= "You won the game";
   audio2.play();
   displayMessage("Happy Birthday!!! You're the winner!!!");
-  delay(2580).then(() => {reset()});
+  delay(2500).then(() => {reset()});
 //   function delay(ms) {
 //   return new Promise(resolve => setTimeout(resolve, ms));
 // }
