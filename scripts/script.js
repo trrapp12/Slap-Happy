@@ -86,11 +86,6 @@ function displayMessage (message) {
     }
 }
 
-// function splits words on ""
-function split () {
-  console.log("line 73: split() firing");
-  return this.word.split("");
-}
 
 // function holds logic to determine if the game is won or not
 function win () {
