@@ -151,7 +151,8 @@ function compareGuess () {
   console.log(guess);
 
    exchangeValues(guess);
-   if (initialObject.guessDisplayButton.includes(guess) === true) {
+   console.log("line 154. initialObject.answerArr is " + initialObject.answerArr + " and guess is: " + guess);
+   if (initialObject.answerArr.includes(guess) === false) {
      depricateTries();
    } else {
      return;
