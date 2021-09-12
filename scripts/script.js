@@ -20,6 +20,9 @@ const audio = new Audio('media/233579__roivasugo__boo-you-suck.wav');
 const audio2 = new Audio('media/ES_Happy_Birthday_33_SFX_Producer.mp3');
 const submitAudio = new Audio('media/ES_Button_Push_4_SFX_Producer.mp3');
 
+// sets display area for messages
+const loseWindow = document.getElementById("winLoseMessageDisplay");
+
 function delay(ms) {
   console.log("line 19: entering delay()")
   return new Promise(resolve => setTimeout(resolve, ms))
@@ -80,7 +83,7 @@ function test () {
 // reusable function which creates a message to display (i.e if you win/lose)
 function displayMessage (message) {
   console.log("line 60: displayMessage() firing");
-    var loseWindow = document.getElementById("winLoseMessageDisplay");
+
     if (loseWindow.style.visibility === "hidden") {
       loseWindow.innerHTML = message;
       loseWindow.style.visibility = "visible";
