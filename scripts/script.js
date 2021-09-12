@@ -81,13 +81,13 @@ function test () {
 function displayMessage (message) {
   console.log("line 60: displayMessage() firing");
     var loseWindow = document.getElementById("winLoseMessageDisplay");
-    if (loseWindow.style.visibility === "visible") {
-      loseWindow.style.visibility = "hidden";
-    } else {
-      loseWindow.style.visibility = "visible";
+    if (loseWindow.style.visibility === "hidden") {
       loseWindow.innerHTML = message;
+      loseWindow.style.visibility = "visible";
+      } else {
+      loseWindow.innerHTML = message;
+      loseWindow.style.visibility = "visible";
       setTimeout(() => {loseWindow.style.visibility = "hidden"}, 2500);
-
     }
 }
 
