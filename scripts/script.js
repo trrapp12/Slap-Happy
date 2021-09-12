@@ -29,6 +29,10 @@ function delay(ms) {
   return new Promise(resolve => setTimeout(resolve, ms))
 };
 
+function clearInputField () {
+  document.getElementById('input1').value = "";
+}
+
 // this function will reset the object (i.e. if the game is won)
 function reset () {
 // console.log place in code
@@ -91,7 +95,7 @@ function displayMessage (message) {
       } else {
       loseWindow.innerHTML = message;
       loseWindow.style.visibility = "visible";
-      setTimeout(() => {loseWindow.style.visibility = "hidden"}, 2500);
+      setTimeout(() => {loseWindow.style.visibility = "hidden"}, 10000);
     }
 }
 
@@ -146,12 +150,17 @@ function exchangeValues (guess) {
 
 // function compares if guess is correct or not
 function compareGuess () {
+
   console.log("line 128: compares() firing");
+
   let guess = test();
   console.log(guess);
 
    exchangeValues(guess);
    console.log("line 154. initialObject.answerArr is " + initialObject.answerArr + " and guess is: " + guess);
+
+   clearInputField();
+
    if (initialObject.answerArr.includes(guess) === false) {
      depricateTries();
    } else {
@@ -206,7 +215,8 @@ function depricateTries () {
     console.log("line 173: depricatesTries() else-if statement entered");
     audio.play();
     displayMessage("You done ran out of turns!!! You lose!!!");
-    delay(2500).then(() => { reset() });
+    // delay(5000).then(() => { reset() });
+    setTimeout(() => {reset()}, 10000);
     return;
   }
 }
