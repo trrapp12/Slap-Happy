@@ -15,6 +15,7 @@ const loseWindow = document.getElementById("winLoseMessageDisplay");
 // initializes an object which will hold the numbers of tries, tries left, max number of tries, word, and letters guessed
 
 var initialObject = {
+  answerArr: [],
   maxtries: 9,
   tries: 0,
   guessDisplayButton: [],
@@ -111,7 +112,7 @@ function win () {
   delay(2500).then(() => { reset() });
 }
 
-// function controls counting of the characters
+// function counts how many characters are in the word, and then displays approprate number of _ _ _ _
 function countCharacters () {
   console.log("line 95: countCharacters() firing");
     initialObject.guessDisplayArr = [];
@@ -150,8 +151,11 @@ function compareGuess () {
   console.log(guess);
 
    exchangeValues(guess);
-
-   depricateTries();
+   if (initialObject.guessDisplayButton.includes(guess) === true) {
+     depricateTries();
+   } else {
+     return;
+   }
 
 }
 
@@ -201,8 +205,8 @@ function depricateTries () {
     console.log("line 173: depricatesTries() else-if statement entered");
     audio.play();
     displayMessage("You done ran out of turns!!! You lose!!!");
-    setTimeout(reset, 2500);
-  return;
+    delay(2500).then(() => { reset() });
+    return;
   }
 }
 
