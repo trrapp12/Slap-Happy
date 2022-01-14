@@ -18,17 +18,25 @@
 ---
 
 ![slaphappy](https://user-images.githubusercontent.com/11747875/32625008-477ffbaa-c548-11e7-88b6-5c2f76ebdbbd.gif)
+<br>
+<br>
+
+---
 
 ### Rules of the Game:
----
+
 
 1. The app starts by choosing a random word
 2. The player can guess a single letter at a time
 3. The player has a fixed number of turns in which to guess all of the letters in the word
 4. The app should indicate when the player has won or lost
+<br>
+<br>
+
+---
 
 ### This project demonstrates the following:
----
+
 
 - [x] Correct use of functions, conditionals, loops, arrays.
 - [x] Properly sequence JavaScript statements.
@@ -44,25 +52,34 @@
     b. index.html
     c. One or more CSS files (e.g. css/main.css)
     d. One or more JavaScript files (e.g. js/main.js)
+<br>
+<br>
+
+---
 
 ### Ways I challenged myself:
 
----
 
 - [x] Use JavaScript to trigger audio on state changes(i.e. win/lose).
 - [x] Use onclick functionality to start game.
 - [x] Incorporate video into CSS.
 - [x] Refactor with @media query to make mobile ready
 - [x] Responsive design
+<br>
+<br>
+
+---
 
 ### Project published at: 
 
----
 
 [Slap-Happy](https://trrapp12.github.io/Slap-Happy/)
-<br/>
-<br/>
-### More Information:
+<br>
+<br>
+
 ---
+
+### More Information:
+
 
 \**For more information see my [LinkedIn](https://www.linkedin.com/in/trevor-rapp-042a1037) or return to my [Github](https://github.com/trrapp12)*
