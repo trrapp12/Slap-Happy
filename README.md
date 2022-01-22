@@ -1,5 +1,10 @@
 # Slap Happy
 
+
+##### Contributors: Trevor Rapp
+
+---
+
 <br>
 
 
