@@ -286,7 +286,7 @@ margin-right: 0px;
     margin-left: auto;
     margin-right: auto;
     padding: 2.5em;
-    border: 1px solid gray;
+    border: 1px solid #49CCBD;
 }
 /******************   Button   ************************/
 
@@ -304,7 +304,7 @@ a {
   color: white;
   cursor: pointer;
   display: inline-flex;
-  border: 1px solid gray;
+  border: 1px solid #49CCBD;
   padding: 8px 10px 10px 10px;
 
 }
@@ -333,7 +333,7 @@ a {
   height: 50px;
   line-height: 42px;
   box-sizing: border-box;
-  border: 4px solid gray;
+  border: 4px solid #49CCBD;
   border-left: none;
   transition: 400ms transform ease-in-out;
   transform: rotateY(90deg);
@@ -353,7 +353,7 @@ input[type=text] {
   padding: 1px 1px 1px 10px;
   margin: 35px 0px 10px 0px;
   box-sizing: border-box;
-  border: 1px solid gray;
+  border: 1px solid #49CCBD;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   outline: none;
