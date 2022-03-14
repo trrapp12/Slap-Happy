@@ -173,8 +173,8 @@ video#bgvid {
   font-size: 1em;
   color: 	white;
   padding-top: 40px;
-  width: 20%;
-  margin-left: 10%;
+  width: 15%;
+  margin-left: 15%;
   margin-right: 70%;
   line-height: 200%;
 }
@@ -264,9 +264,9 @@ video#bgvid {
 }
 
 .therules {
-  width: 20%;
-  margin-right: 2%;
-  margin-left: 78%;
+  width: 15%;
+  margin-right: 15%;
+  margin-left: 70%;
 }
 
 .tryit{
