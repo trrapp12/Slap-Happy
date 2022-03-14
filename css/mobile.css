@@ -46,11 +46,16 @@ body {
 .font {
   font-family: 'Poiret One', cursive;
   font-size: 1.5em;
-  color: black;
+  color: #348077;
+  width: 80%;
+  margin: 40px auto 40px auto;
 }
 
+body > div.gamecontainer > div.rules.font {
+  color: white;
+}
 .box {
-      border: 1px solid gray;
+      border: 1px solid #49CCBD;
       padding-top: .5em;
       padding-bottom: .5em;
       margin-top: .5em;
@@ -115,11 +120,11 @@ video#bgvid {
   font-family: 'Open Sans', cursive;
   font-size: 1em;
   width: 100vw;
-  height: 120vh;
+  height: 100%;
   margin-top: 5vh;
   margin-bottom: -5vh;
   margin-left: 0px
-  margin-right: 0px;
+margin-right: 0px;
   line-height: 200%;
   background-color: white;
   border: 0px;
@@ -345,16 +350,16 @@ a {
 /****************Input CSS***************************/
 
 input[type=text] {
-    padding: 1px 1px 1px 10px;
-    margin: 0;
-    box-sizing: border-box;
-    border: 1px solid gray;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-    outline: none;
-    color: white;
-    line-height: 35px;
-    width: 100%;
+  padding: 1px 1px 1px 10px;
+  margin: 35px 0px 10px 0px;
+  box-sizing: border-box;
+  border: 1px solid gray;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+  color: white;
+  line-height: 35px;
+  width: 100%;
 }
 
 input[type=text]:focus {
@@ -368,7 +373,7 @@ input[type=text]:focus {
 
 @media screen and (max-device-width: 800px) {
     html {
-         background: url(polina.jpg) #000 no-repeat center center fixed;
+      background-color: #803C3B;
     }
     #bgvid {
         display: none;
