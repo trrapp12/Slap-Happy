@@ -80,9 +80,9 @@ function test () {
   if (input.match(letterRE) && input.length < 2) {
     return input;
   } else {
+    clearInputField();
     alert("You Rascal! You either tried to guess more than one letter at once, or you tried to guess something that wasn't a letter. You won't get away with this!");
   }
-
 }
 
 // reusable function which creates a message to display (i.e if you win/lose)

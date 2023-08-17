@@ -1,7 +1,8 @@
-
-
 /*****************   General CSS Rules  *************/
-a {text-decoration: none; color: none}
+a {
+  text-decoration: none;
+  color: none
+}
 
 * {
   margin: 0px;
@@ -11,11 +12,12 @@ a {text-decoration: none; color: none}
 br {
   display: none;
 }
+
 .clearfix {
   overflow: auto;
-  content:" ";
-  display:block;
-  clear:both;
+  content: " ";
+  display: block;
+  clear: both;
 }
 
 body {
@@ -51,33 +53,35 @@ body {
   margin: 40px auto 40px auto;
 }
 
-body > div.gamecontainer > div.rules.font {
+body>div.gamecontainer>div.rules.font {
   color: white;
 }
+
 .box {
-      border: 1px solid #49CCBD;
-      padding-top: .5em;
-      padding-bottom: .5em;
-      margin-top: .5em;
-  }
+  border: 1px solid #49CCBD;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  margin-top: .5em;
+}
+
 /*****************  Video CSS  **************************/
 
 
 video#bgvid {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background: url(polina.jpg) no-repeat;
-    background-size: cover;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: url(polina.jpg) no-repeat;
+  background-size: cover;
 }
 
 
@@ -123,8 +127,7 @@ video#bgvid {
   height: 100%;
   margin-top: 5vh;
   margin-bottom: -5vh;
-  margin-left: 0px
-margin-right: 0px;
+  margin-left: 0px margin-right: 0px;
   line-height: 200%;
   background-color: white;
   border: 0px;
@@ -137,7 +140,7 @@ margin-right: 0px;
 .headline {
   font-family: 'Poiret One', cursive;
   font-size: 1.5em;
-  color: 	white;
+  color: white;
   padding-top: 40px;
   width: 80%;
   margin-left: 10%;
@@ -150,22 +153,24 @@ margin-right: 0px;
   position: static;
 }
 
-.sexy_line_left{
-    display:block;
-    border:none;
-    color:white;;
-    height:2px;
-    background:transparent;
-    background: linear-gradient( 45deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+.sexy_line_left {
+  display: block;
+  border: none;
+  color: white;
+  ;
+  height: 2px;
+  background: transparent;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 }
 
-.sexy_line_right{
-    display:block;
-    border:none;
-    color:white;;
-    height:2px;
-    background:transparent;
-    background: linear-gradient( 45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+.sexy_line_right {
+  display: block;
+  border: none;
+  color: white;
+  ;
+  height: 2px;
+  background: transparent;
+  background: linear-gradient(45deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
 }
 
 .inputfont {
@@ -252,8 +257,13 @@ margin-right: 0px;
 }
 
 @-webkit-keyframes smooth {
-  0% { opacity: 0;}
-  100% { opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .challenge {
@@ -273,21 +283,22 @@ margin-right: 0px;
   margin-right: 10%;
 }
 
-.tryit{
+.tryit {
   width: 100%;
 }
 
 .gamecontrols {
-    top: 15%;
-    bottom: 15%;
-    width: 80%;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 2.5em;
-    border: 1px solid #49CCBD;
+  top: 15%;
+  bottom: 15%;
+  width: 80%;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2.5em;
+  border: 1px solid #49CCBD;
 }
+
 /******************   Button   ************************/
 
 a {
@@ -313,7 +324,7 @@ a {
   background: white;
   text-decoration: none;
   transform: rotateY(0deg);
-  color: 	rgb(98, 71, 75);
+  color: rgb(98, 71, 75);
 
 }
 
@@ -338,7 +349,7 @@ a {
   transition: 400ms transform ease-in-out;
   transform: rotateY(90deg);
   transform-origin: left;
-  text-align:center;
+  text-align: center;
   padding-top: 5px;
 }
 
@@ -363,8 +374,8 @@ input[type=text] {
 }
 
 input[type=text]:focus {
-    border: .2em solid rgb(98, 71, 75);
-    color: gray;
+  border: .2em solid rgb(98, 71, 75);
+  color: gray;
 }
 
 
@@ -372,10 +383,62 @@ input[type=text]:focus {
 
 
 @media screen and (max-device-width: 800px) {
-    html {
-      background-color: #803C3B;
-    }
-    #bgvid {
-        display: none;
-    }
+  html {
+    background-color: #803C3B;
+  }
+
+  #bgvid {
+    display: none;
+  }
+
+  .btn {
+    font-family: 'Poiret One', cursive;
+    width: 100%;
+    font-size: .8em;
+    text-decoration: none;
+    background-color: rgb(219, 209, 209);
+    color: white;
+    cursor: pointer;
+    display: block;
+    border: none;
+    padding: 8px 10px 10px 10px;
+    text-align: center;
+    user-select: none;
+    border-radius: 45px;
+    background: #62474b;
+    box-shadow: 2px 2px 10px #4f3a3dd1, -2px -2px 10px #75545914;
+  }
+
+  .ns-cf6kb-e-80 {
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+    background-image: url(https://tpc.googlesyndication.com/simgad/1901462621111977041/14763004658117789537);
+  }
+
+  .gamecontrols {
+    top: 0;
+    bottom: 0;
+    width: 80%;
+    margin-top: 5vh;
+    margin-bottom: 0vh;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0em;
+    border: 1px solid #49CCBD;
+  }
+
+  .font {
+    font-family: 'Poiret One', cursive;
+    font-size: 1.5em;
+    color: #348077;
+    width: 80%;
+    margin: 10px auto 10px auto;
+  }
+
+  .partitionII>.font>.padding {
+    padding-bottom: 2em;
+  }
 }

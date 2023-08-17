@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
   <meta property="og:title" content="Slap Happy" />
   <meta property="og:description" content="A web app that mimics the game of Hangman" />
   <meta property="og:url" content="https://trrapp12-ironyard.github.io/hangman/" />
-  <meta property="og:image" content="https://cloud.githubusercontent.com/assets/11747875/20688946/44eaeb6c-b580-11e6-968e-9a1ec5737743.png" /> <!-- -->
+  <meta property="og:image"
+    content="https://cloud.githubusercontent.com/assets/11747875/20688946/44eaeb6c-b580-11e6-968e-9a1ec5737743.png" />
+  <!-- -->
   <title>Hangman</title>
   <link rel="stylesheet" media="screen and (max-width: 795px)" href="css/mobile.css" title="no title">
   <link rel="stylesheet" href="css/master.css" media="screen and (min-width: 795px)" title="no title">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="css/animate.css">
   <link href="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poiret+One|Pontano+Sans|Quicksand" rel="stylesheet">
 </head>
+
 <body>
   <div class="gamecontainer">
     <div class="triangle">
@@ -36,9 +41,12 @@
       </div>
     </div>
     <div class="welcome">
-        <h4>WELCOME:</h4>
-        <br>
-        <p>My name is Trevor Rapp, and I am a Front-End Development student at the Iron-Yard, Salt Lake City, UT. I love JavaScript, Python, ReactJS, HTML5, CSS3, UrbEx photography, and jumping on the bed with my 3 daughters.  This is a portfolio project I designed. See my code at my <a href="https://github.com/trrapp12-ironyard" target="blank">github.</a> Or at my <a href="http://web-karma.org" target="blank">website.</a>
+      <h4>WELCOME:</h4>
+      <br>
+      <p>My name is Trevor Rapp, and I am a Front-End Development student at the Iron-Yard, Salt Lake City, UT. I love
+        JavaScript, Python, ReactJS, HTML5, CSS3, UrbEx photography, and jumping on the bed with my 3 daughters. This is
+        a portfolio project I designed. See my code at my <a href="https://github.com/trrapp12-ironyard"
+          target="blank">github.</a> Or at my <a href="http://web-karma.org" target="blank">website.</a>
       </p>
     </div>
     <div class="challenge" data-aos="fade-right" data-aos-duration="2000">
@@ -49,8 +57,13 @@
     </div>
     <div class="therules welcome">
       <p>
-        Think of it as an onerous, high-stakes game of hangman. The game uses Math.random() to choose a word from pre-defined dictionary. A system of functions iterate through the word, count the number of characters, and display an equivalent number of "_" 's to show you how many letters there are. Then you type your guess and an onclick event activates more funcions which compare the characters in the guess array to the selected word, decrements the amount of tries, and determines if you have lost.</p> 
-        <p>Be ready to not just be beat mentally, but also psychologically. Yes, we will mock you into submission.  Are you ready?</p>
+        Think of it as an onerous, high-stakes game of hangman. The game uses Math.random() to choose a word from
+        pre-defined dictionary. A system of functions iterate through the word, count the number of characters, and
+        display an equivalent number of "_" 's to show you how many letters there are. Then you type your guess and an
+        onclick event activates more funcions which compare the characters in the guess array to the selected word,
+        decrements the amount of tries, and determines if you have lost.</p>
+      <p>Be ready to not just be beat mentally, but also psychologically. Yes, we will mock you into submission. Are you
+        ready?</p>
     </div>
     <div class="headline" data-aos="fade-left" data-aos-duration="2000" id="headline2">
       <p>GO!</p>
@@ -58,14 +71,14 @@
         <span class="sexy_line_left"></span>
       </div>
     </div>
-    <div class="rules font">
-      <h3>Rules: </h3>
-        <p> Player starts with 10 tries to guess a letter in the word.  Each wrong guess counts.  Correct guesses do not.  If you fail to guess the word in 10 guesses YOU WILL BE SHAMED!!!</p>
-    </div>
     <div class="container-partition">
-
       <div class="partition">
-
+        <div class="rules font">
+          <h3>Rules: </h3>
+          <p> Player starts with 10 tries to guess a letter in the word. Each wrong guess counts. Correct guesses do
+            not. If
+            you fail to guess the word in 10 guesses YOU WILL BE SHAMED!!!</p>
+        </div>
         <div class="gamecontrols">
           <div class="padding">
             <p class="font padding">
@@ -73,13 +86,12 @@
             </p>
             <div id="guessDisplay" class="font padding">
             </div>
-            <div id="winLoseMessageDisplay" class="font padding winLoseMessageDisplay" >
+            <div id="winLoseMessageDisplay" class="font padding winLoseMessageDisplay">
             </div>
           </div>
         </div>
       </div>
-      <div class="partition middle-column"
-      <div class="gamecontrols">
+      <div class="partition middle-column" <div class="gamecontrols">
         <div class="partitionII">
           <div id="frm1" class="font">
 
@@ -91,27 +103,30 @@
               <p class="font padding high-em-margin" id="turnsLeft">
                 Turns Left: 10
               </p>
-              <input class="inputfont padding high-em-margin" id="input1" type="text" name="fname" value="" placeholder="TYPE GUESS" style="font-size: .8em;"><br>
-              <button class="btn" onclick="myFunction()"><p>SUBMIT</p></button>
+              <input class="inputfont padding high-em-margin" id="input1" type="text" name="fname" value=""
+                placeholder="TYPE GUESS" style="font-size: .8em;"><br>
+              <button class="btn" onclick="myFunction()">
+                <p>SUBMIT</p>
+              </button>
             </div>
             <div class="bg">
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<div class=" e3 padding">
-  <!-- <div class="pausecontainer button-group">
+  <div class=" e3 padding">
+    <!-- <div class="pausecontainer button-group">
   <div class="btn text" id="vidpause">PAUSE
 </div>
 <div class="icon zmdi zmdi-play btn text" style="font-size:2em; text-align:center; padding-top: 5px">
 </div>
 </div> -->
-</div>
+  </div>
 
-<video playsinline autoplay muted loop id="bgvid">
-  <source src="media/346041025.mp4" type="video/mp4">
+  <video playsinline autoplay muted loop id="bgvid">
+    <source src="media/346041025.mp4" type="video/mp4">
   </video>
   <div class="height">
   </div>
@@ -123,4 +138,5 @@
   <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
   <script>AOS.init();</script>
 </body>
+
 </html>
