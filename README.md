@@ -29,6 +29,8 @@
 
 ### DESCRIPTION:
 
+<br/>
+
 > **Lt. Jake 'Hangman' Seresin**: [after destroying the plane that almost killed Maverick and Rooster]
 > Good afternoon, ladies and gentleman, this is your savior speaking.
 > Please fasten your seat belts, return the tray tables to their locked an upright positions and prepare for landing.
@@ -37,7 +39,9 @@
 > 
 > -- Hangman, Top Gun: Maverick
 
-* The game of hangman revisited.
+<br/>
+
+*The game of hangman revisited.*
 
 <br/>
 
@@ -45,12 +49,11 @@
 
 ### QUICKSTART GUIDE
 
-
 1. The app starts by choosing a random word
 2. The player can guess a single letter at a time
 3. The player has a fixed number of turns in which to guess all of the letters in the word
 4. The app should indicate when the player has won or lost
-<br>
+
 <br>
 
 ---
@@ -73,11 +76,10 @@
     c. One or more CSS files (e.g. css/main.css)
     d. One or more JavaScript files (e.g. js/main.js)
 <br>
-<br>
 
 ---
 
-### Ways I challenged myself:
+### CHALLENGES I OVERCAME
 
 
 - [x] Use JavaScript to trigger audio on state changes(i.e. win/lose).
@@ -85,21 +87,28 @@
 - [x] Incorporate video into CSS.
 - [x] Refactor with @media query to make mobile ready
 - [x] Responsive design
-<br>
-<br>
 
----
-
-### Project published at: 
-
-
-[Slap-Happy](https://trrapp12.github.io/Slap-Happy/)
-<br>
 <br>
 
 ---
 
-### More Information:
+### MY OWN PERSONAL CONTRIBUTIONS INCLUDED:
 
+- [X] all work is completely my own.  The only directions were user stories the assignment needed to complete.
+
+<br/>
+
+---
+
+### ATTRIBUTIONS: 
+
+Project created by TREVOR RAPP
+
+<br/>
+
+---
+
+### YOU CAN FIND ME AT:
 
 \**For more information see my [LinkedIn](https://www.linkedin.com/in/trevor-rapp-042a1037) or return to my [Github](https://github.com/trrapp12)*
+
