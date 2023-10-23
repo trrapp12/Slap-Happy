@@ -1,7 +1,8 @@
 # Slap Happy
 
+#### Contributors: Trevor Rapp
 
-##### Contributors: Trevor Rapp
+*all work is completely my own*
 
 ---
 
@@ -10,6 +11,9 @@
 
 [![View Project](https://user-images.githubusercontent.com/11747875/141830440-30913382-3927-49ef-b471-8ddbdd52c3d4.png)](https://trrapp12.github.io/Slap-Happy/)
 
+<br>
+
+![slaphappy](https://user-images.githubusercontent.com/11747875/32625008-477ffbaa-c548-11e7-88b6-5c2f76ebdbbd.gif)
 
 <br>
 
@@ -18,17 +22,28 @@
 <img align="left" alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />
 <img align="left" alt="CSS3" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />
 <img align="left" alt="JavaScript" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />
+
 <br>
 
 ---
 
-![slaphappy](https://user-images.githubusercontent.com/11747875/32625008-477ffbaa-c548-11e7-88b6-5c2f76ebdbbd.gif)
-<br>
-<br>
+### DESCRIPTION:
+
+> **Lt. Jake 'Hangman' Seresin**: [after destroying the plane that almost killed Maverick and Rooster]
+> Good afternoon, ladies and gentleman, this is your savior speaking.
+> Please fasten your seat belts, return the tray tables to their locked an upright positions and prepare for landing.
+> **Bradley 'Rooster' Bradshaw**: Hey, Hangman, you look good.
+> **Lt. Jake 'Hangman' Seresin**: I am good, Rooster. I'm very good. I'll see you back on deck.
+> 
+> -- Hangman, Top Gun: Maverick
+
+* The game of hangman revisited.
+
+<br/>
 
 ---
 
-### Rules of the Game:
+### QUICKSTART GUIDE
 
 
 1. The app starts by choosing a random word
@@ -40,7 +55,7 @@
 
 ---
 
-### This project demonstrates the following:
+### PROJECT DEMONSTRATES THE FOLLOWING
 
 
 - [x] Correct use of functions, conditionals, loops, arrays.
